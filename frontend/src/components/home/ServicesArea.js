@@ -15,7 +15,30 @@ export const ServicesContainer = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   background: ${({ lightBg }) =>
-    lightBg ? '#fff' : `linear-gradient(23deg, ${ndGcolor} , ${stGcolor})`};
+    lightBg
+      ? 'url(/images/Bg1.jpg)'
+      : `linear-gradient(23deg, ${ndGcolor} , ${stGcolor})`};
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+
+  :before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.6) 100%
+      ),
+      linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
+    z-index: 2;
+  }
 `;
 
 export const ServiceWrapper = styled.div`
@@ -26,6 +49,7 @@ export const ServiceWrapper = styled.div`
   justify-content: center;
   flex-direction: column;
   margin: 5rem 0;
+  z-index: 3;
 `;
 
 export const TitleWrapper = styled.div`
@@ -50,16 +74,16 @@ export const ServicesCard = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #d1d1d1;
-  border-radius: 20px;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   overflow: hidden;
   transition: all 0.5s ease-in;
   margin-bottom: 1.5rem;
 
-  &:hover {
-    background-color: #0e1b43;
-    color: #fff;
-  }
   &:hover img {
     transform: scale(1.2);
   }
@@ -97,6 +121,7 @@ export const CardText = styled.div`
   justify-content: flex-start;
   align-items: center;
   margin: 1rem 0;
+  color: #fff;
 
   & > * {
     margin-bottom: 1rem;
@@ -120,18 +145,18 @@ export const CardParagraph = styled.p`
 
 export const CardButton = styled(Link)`
   text-decoration: none;
-  color: #000;
+  color: #fff;
   margin-bottom: 1.5rem;
   transition: all 0.3s ease-in;
   padding: 5px 10px;
-  border: #000 solid 2px;
+  border: #fff solid 2px;
   border-radius: 10px;
 `;
 
 function ServicesArea({ lightText, topLine, headline }) {
   return (
     <>
-      <ServicesContainer>
+      <ServicesContainer lightBg={true}>
         <ServiceWrapper>
           <TitleWrapper>
             <TopLine lightText={lightText}>{topLine}</TopLine>
