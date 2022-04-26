@@ -1,6 +1,6 @@
 import styled from 'styled-components/macro';
 
-const stGcolor = '#214222';
+// const stGcolor = '#214222';
 const ndGcolor = '#90c747';
 
 const stBcolor = '#0e1b43';
@@ -10,7 +10,7 @@ export const InfoContainer = styled.div`
   color: #fff;
   height: auto;
   background: ${({ lightBg }) =>
-    lightBg ? '#fff' : `linear-gradient(23deg, ${ndGcolor} , ${stGcolor})`};
+    lightBg ? '#fff' : `linear-gradient(23deg, ${stBcolor} 40%, grey)`};
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -76,7 +76,7 @@ export const TextWrapper = styled.div`
   }
 `;
 
-export const TopLine = styled.h2`
+export const TopLine = styled.h3`
   color: ${({ lightText }) => (lightText ? `${ndOcolor}` : `${ndGcolor}`)};
   font-size: 22px;
   line-height: 16px;
@@ -85,7 +85,7 @@ export const TopLine = styled.h2`
   margin-bottom: 16px;
 `;
 
-export const Heading = styled.h1`
+export const Heading = styled.h2`
   margin-bottom: 24px;
   font-size: 48px;
   line-height: 1.1;

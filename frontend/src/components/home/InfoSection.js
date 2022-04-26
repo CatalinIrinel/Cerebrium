@@ -33,7 +33,6 @@ function InfoSection({
   img,
   alt,
   dataAosImg,
-  fullButton,
   buttonLink,
   bigButton,
   bigFont,

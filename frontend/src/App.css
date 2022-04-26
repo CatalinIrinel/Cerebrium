@@ -45,3 +45,10 @@
 .copyrights {
   margin: 0 0.5rem;
 }
+
+ul {
+  list-style: none;
+}
+.afectiuni details summary -webkit-details-marker {
+  color: red;
+}

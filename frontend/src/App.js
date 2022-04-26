@@ -10,6 +10,7 @@ import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
 import Sidebar from './components/sidebar/Sidebar';
 import ScrollToTop from './ScrollToTop';
+import Afectiuni from './pages/Afectiuni';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,6 +25,7 @@ function App() {
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Routes>
+        <Route path="/afectiuni" element={<Afectiuni />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/servicii" element={<Servicii />} />
         <Route path="/ce-este-neurofeedback-ul" element={<NeurofeedPage />} />

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const HeaderContainer = styled.div`
   width: 100%;
-  height: 600px;
+  height: 400px;
   margin-top: -90px;
 
   @media screen and (max-width: 575.98px) {
@@ -32,7 +32,7 @@ export const HeaderTitle = styled.h1`
   font-weight: bold;
   font-size: 60px;
   position: absolute;
-  top: 35%;
+  top: 20%;
   @media screen and (max-width: 575.98px) {
     width: 300px;
     text-align: center;

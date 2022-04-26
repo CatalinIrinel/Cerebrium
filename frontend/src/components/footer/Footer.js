@@ -24,24 +24,27 @@ function Footer() {
           <FooterLinkItems>
             <LinksTitle>Meniu</LinksTitle>
             <FooterLink to="/">Acasa</FooterLink>
-            <FooterLink to="/">Programari</FooterLink>
-            <FooterLink to="/">Servicii</FooterLink>
-            <FooterLink to="/">Echipa Noastra</FooterLink>
+            <FooterLink to="/contact">Programari</FooterLink>
+            <FooterLink to="/servicii">Servicii</FooterLink>
+            <FooterLink to="/despre">Echipa Noastra</FooterLink>
           </FooterLinkItems>
 
           <FooterLinkItems>
             <LinksTitle>Neurofeedback</LinksTitle>
-            <FooterLink to="/">Ce este Neurofeedback-ul?</FooterLink>
-            <FooterLink to="/">Cum functioneaza?</FooterLink>
-            <FooterLink to="/">Dovezi Stiintifice</FooterLink>
-            <FooterLink to="/">Intrebari Frecvente</FooterLink>
+            <FooterLink to="/ce-este-neurofeedback-ul">
+              Ce este Neurofeedback-ul?
+            </FooterLink>
+            <FooterLink to="/afectiuni">Ce afectiuni se pot trata?</FooterLink>
+            <FooterLink to="/">Ce este frecventa optima?</FooterLink>
           </FooterLinkItems>
 
           <FooterLinkItems>
             <LinksTitle>Link-uri utile</LinksTitle>
-            <FooterLink to="/">Antrenamente</FooterLink>
-            <FooterLink to="/">Monitorizare</FooterLink>
-            <FooterLink to="/">Indicatii Terapeutice</FooterLink>
+            <FooterLink to="/gdpr">Politica GDPR</FooterLink>
+            <FooterLink to="/termeni-utilizare">
+              Termeni de Utilizare
+            </FooterLink>
+            <FooterLink to="/termeni-conditii">Termeni și Condiții</FooterLink>
           </FooterLinkItems>
         </FooterLinksWrapper>
       </FooterLinksContainer>

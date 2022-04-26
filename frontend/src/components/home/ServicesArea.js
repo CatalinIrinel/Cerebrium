@@ -102,13 +102,16 @@ export const ServicesCard = styled.div`
 export const ImageArea = styled.div`
   max-width: 350px;
   width: 100%;
+  height: 260px;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
 `;
 export const ServicesImg = styled.img`
+  object-fit: cover;
   width: 100%;
+  height: 100%;
   transition: all 0.3s ease-in;
 `;
 
@@ -121,6 +124,7 @@ export const CardText = styled.div`
   justify-content: flex-start;
   align-items: center;
   margin: 1rem 0;
+  padding: 1rem;
   color: #fff;
 
   & > * {

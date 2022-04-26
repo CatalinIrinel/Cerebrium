@@ -86,7 +86,7 @@ export const FooterLinkItems = styled.div`
   }
 `;
 
-export const LinksTitle = styled.h1`
+export const LinksTitle = styled.h2`
   font-size: 18px;
   margin-bottom: 16px;
   text-transform: uppercase;
@@ -112,6 +112,8 @@ export const FooterWrap = styled.div`
   max-width: 1600px;
   width: 100%;
   z-index: 3;
+  padding-top: 10px;
+  border-top: 1px solid #fff;
   @media screen and (max-width: 575.98px) {
     flex-direction: column;
     margin: 10px 0;
