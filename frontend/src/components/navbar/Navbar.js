@@ -22,7 +22,7 @@ function Navbar({ toggle }) {
     }
   }
   const changeNav = () => {
-    if (window.scrollY >= 120) {
+    if (window.scrollY >= 90) {
       setScrollNav(true);
     } else {
       setScrollNav(false);
@@ -40,7 +40,7 @@ function Navbar({ toggle }) {
             <NavLinks to="/">Acasă</NavLinks>
           </NavItem>
           <NavItem>
-            <NavLinks to="/despre">Despre Cerebrium</NavLinks>
+            <NavLinks to="/">Despre Cerebrium</NavLinks>
           </NavItem>
         </NavMenu>
         <NavLogoLink to="/">
@@ -59,11 +59,6 @@ function Navbar({ toggle }) {
           <NavItem>
             <NavLinks to="/servicii">Serviciile Noastre</NavLinks>
           </NavItem>
-          {/* <NavItem>
-            <NavLinks to="/ce-este-neurofeedback-ul">
-              Ce este Neurofeedback-ul?
-            </NavLinks>
-          </NavItem> */}
 
           <NavItem>
             <NavLinks to="/contact">Contact</NavLinks>

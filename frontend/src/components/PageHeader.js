@@ -28,7 +28,7 @@ export const HeaderWrapper = styled.div`
 `;
 
 export const HeaderTitle = styled.h1`
-  color: #fff;
+  color: #f1f1f1;
   font-weight: bold;
   font-size: 60px;
   position: absolute;

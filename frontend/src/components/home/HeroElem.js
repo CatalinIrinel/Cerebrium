@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 const ndGcolor = '#00a31b';
+
 export const HeroContainer = styled.div`
   background: #0c0c0c;
   display: flex;
@@ -73,10 +74,13 @@ export const HeroH1 = styled.h1`
     font-size: 38px;
   }
 `;
+
 export const HeroH2 = styled.h2`
   color: ${ndGcolor};
   font-size: 20px;
-
+  b {
+    text-transform: uppercase;
+  }
   @media screen and (max-width: 768px) {
     font-size: 14px;
   }
@@ -85,6 +89,7 @@ export const HeroH2 = styled.h2`
     font-size: 13px;
   }
 `;
+
 export const HeroP = styled.p`
   margin-top: 24px;
   color: #fff;

@@ -19,17 +19,27 @@ function Sidebar({ isOpen, toggle }) {
           <SidebarLink to="/" onClick={toggle}>
             Acasă
           </SidebarLink>
+
           <SidebarLink to="/despre" onClick={toggle}>
             Despre Cerebrium
+          </SidebarLink>
+
+          <SidebarLink to="/ce-este-neurofeedback-ul" onClick={toggle}>
+            Ce este Neurofeedback-ul?
+          </SidebarLink>
+
+          <SidebarLink to="/frecventa-optima" onClick={toggle}>
+            Frecvența optimă
+          </SidebarLink>
+
+          <SidebarLink to="/afectiuni" onClick={toggle}>
+            Afecțiuni
           </SidebarLink>
 
           <SidebarLink to="/servicii" onClick={toggle}>
             Serviciile Noastre
           </SidebarLink>
 
-          <SidebarLink to="/ce-este-neurofeedback-ul" onClick={toggle}>
-            Ce este Neurofeedback-ul?
-          </SidebarLink>
           <SidebarLink to="/contact" onClick={toggle}>
             Contact
           </SidebarLink>

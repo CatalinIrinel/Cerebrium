@@ -11,6 +11,9 @@ import Footer from './components/footer/Footer';
 import Sidebar from './components/sidebar/Sidebar';
 import ScrollToTop from './ScrollToTop';
 import Afectiuni from './pages/Afectiuni';
+import Serviciu from './pages/Serviciu';
+import Frecventa from './pages/Frecventa';
+import 'remixicon/fonts/remixicon.css';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +30,9 @@ function App() {
       <Routes>
         <Route path="/afectiuni" element={<Afectiuni />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/serviciu/:id" element={<Serviciu />} />
         <Route path="/servicii" element={<Servicii />} />
+        <Route path="/frecventa-optima" element={<Frecventa />} />
         <Route path="/ce-este-neurofeedback-ul" element={<NeurofeedPage />} />
         <Route path="/despre" element={<AboutPage />} />
         <Route path="/" element={<HomePage />} />

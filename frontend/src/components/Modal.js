@@ -22,27 +22,73 @@ const Container = styled.div`
   margin: auto; /* 15% from the top and centered */
   border: none;
   max-width: 1600px;
-  width: 1000px; /* Could be more or less, depending on screen size */
+  width: 1400px; /* Could be more or less, depending on screen size */
   background-color: #e1e1e1;
+  overflow: hidden;
+
+  @media screen and (max-width: 600px) {
+    width: 90%;
+  }
 `;
 
 const DetailsText = styled.div`
   width: 100%;
-  max-width: 700px;
   font-size: 1rem;
   padding: 5rem;
-
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  h2 {
+    font-size: 1.8rem;
+  }
   & > * {
     margin-bottom: 2rem;
   }
-`;
 
+  @media screen and (max-width: 600px) {
+    padding: 2rem;
+    padding-top: 4rem;
+  }
+`;
+const TextArea = styled.div`
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  div {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+
+    & > * {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+
+    @media screen and (max-width: 600px) {
+      overflow: auto;
+      & > * {
+        font-size: 1rem;
+      }
+    }
+  }
+`;
 const CloseSpan = styled.span`
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 1rem;
+  right: 1rem;
+  font-size: 3rem;
+
+  @media screen and (max-width: 600px) {
+    top: 1rem;
+    right: 3rem;
+  }
 `;
-function Modal({ showModal, setShowModal, textData, textTitle }) {
+function Modal({ showModal, setShowModal, details }) {
   const animation = useSpring({
     config: {
       duration: 250,
@@ -81,8 +127,8 @@ function Modal({ showModal, setShowModal, textData, textTitle }) {
                 &times;
               </CloseSpan>
               <DetailsText>
-                <h2>{textTitle}</h2>
-                {textData}
+                <h2>{details.title}</h2>
+                <TextArea>{details.text}</TextArea>
               </DetailsText>
             </Container>
           </animated.div>

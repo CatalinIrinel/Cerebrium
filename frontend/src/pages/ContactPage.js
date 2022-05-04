@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import PageHeader from '../components/PageHeader';
 import styled from 'styled-components';
-import { IoLocationSharp } from 'react-icons/io5';
 import emailjs from '@emailjs/browser';
 
 // const mainColor = '#13113c';
@@ -13,10 +12,27 @@ const ContactContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 1;
   background-image: url('/images/Bg1.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  :before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0.9) 100%
+      ),
+      linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
+    z-index: 2;
+  }
 `;
 
 const ContactWrapper = styled.div`
@@ -26,6 +42,7 @@ const ContactWrapper = styled.div`
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  z-index: 3;
 `;
 
 const FormWrapper = styled.div`
@@ -118,12 +135,34 @@ const FormButton = styled.button`
   font-size: ${({ bigFont }) => (bigFont ? '20px' : '16px')};
 `;
 
-const LocationArea = styled.div`
+const ContactArea = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+  .social {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 3rem;
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+  .telefon {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .contactData {
+    & > * {
+      margin-bottom: 0.8rem;
+    }
+  }
 
   & > .icon {
     font-size: 4rem;
@@ -133,15 +172,17 @@ const LocationArea = styled.div`
 const pageTitle = 'Contactati-ne :)';
 
 function ContactPage() {
-  const form = useRef();
-  const submitHandlerCt = (e) => {
-    e.preventDefault();
+  const formCt = useRef();
+  const formTl = useRef();
 
+  const sendEmailCt = (e) => {
+    e.preventDefault();
+    console.log('email sent');
     emailjs
       .sendForm(
-        'service_Cerebrium',
-        'contact_ct',
-        form.current,
+        'service_cr_ct',
+        'template_ujieozv',
+        formCt.current,
         'TOG1_9xw0nZIs7jB7'
       )
       .then(
@@ -149,7 +190,7 @@ function ContactPage() {
           console.log(result.text);
         },
         (error) => {
-          console.log(error.text);
+          alert(error.text);
         }
       );
 
@@ -157,12 +198,11 @@ function ContactPage() {
   };
   const submitHandlerTl = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm(
-        'service_Cerebrium',
-        'contact_tl',
-        form.current,
+        'service_cr_tl',
+        'template_rnpl1bf',
+        formTl.current,
         'TOG1_9xw0nZIs7jB7'
       )
       .then(
@@ -170,10 +210,9 @@ function ContactPage() {
           console.log(result.text);
         },
         (error) => {
-          console.log(error.text);
+          alert(error.text);
         }
       );
-
     document.getElementById('formTl').reset();
   };
   return (
@@ -183,32 +222,59 @@ function ContactPage() {
         <ContactWrapper>
           {/* contact constanta */}
           <FormWrapper>
-            <LocationArea>
-              <p className="icon">
-                <IoLocationSharp />
-              </p>
-              <div>
-                <h2>Constanta</h2>
-                <h3>Adresa:</h3>
-                <p>
-                  Bvd Al. Lăpușneanu, Nr. 94, <br />
-                  Bl. LE42, Sc. C, Ap. 42, Parter
-                </p>
+            <ContactArea>
+              <div className="social">
+                <a
+                  className="icon"
+                  target="_blank"
+                  aria-label="Facebook"
+                  rel="noreferrer"
+                  href="https://www.facebook.com/Neurofeedback-Constanta-Cerebrium-102789452359176"
+                >
+                  <i className="ri-facebook-circle-line"></i>
+                </a>
+                <a
+                  className="icon"
+                  target="_blank"
+                  aria-label="Instagram"
+                  rel="noreferrer"
+                  href="https://www.instagram.com/cerebrium_neurofeedback/"
+                >
+                  <i className="ri-instagram-line"></i>
+                </a>
               </div>
-            </LocationArea>
-            <ContactForm
-              ref={form}
-              id="formCt"
-              onSubmit={() => submitHandlerCt()}
-            >
-              <FormLabel htmlFor="name">Nume:</FormLabel>
+              <div className="contactData">
+                <div>
+                  <h2>Constanta</h2>
+                </div>
+
+                <div>
+                  <h3>Adresa:</h3>
+                  <p>
+                    Bvd Al. Lăpușneanu, Nr. 94, <br />
+                    Bl. LE42, Sc. C, Ap. 42, Parter
+                  </p>
+                </div>
+
+                <div>
+                  <h3>Telefon:</h3>
+                  <p>
+                    <a className="telefon" href="tel:+40742323753">
+                      +40740 323 753
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </ContactArea>
+            <ContactForm ref={formCt} id="formCt" onSubmit={sendEmailCt}>
+              <FormLabel htmlFor="name">Nume: *</FormLabel>
               <FormInput
                 type="text"
                 name="nameC"
                 required
                 placeholder="Numele si prenumele"
               />
-              <FormLabel htmlFor="email">Email:</FormLabel>
+              <FormLabel htmlFor="email">Email: *</FormLabel>
               <FormInput
                 type="email"
                 name="emailC"
@@ -216,10 +282,10 @@ function ContactPage() {
                 placeholder="Email-ul dumneavoastră"
               />
 
-              <FormLabel>Alege-ti o data: </FormLabel>
-              <FormInput type="date" name="dateC" />
+              <FormLabel>Numarul de telefon: </FormLabel>
+              <FormInput type="number" name="dateC" />
 
-              <FormLabel htmlFor="message">Mesaj:</FormLabel>
+              <FormLabel htmlFor="message">Mesaj: *</FormLabel>
               <FormTextArea cols="30" rows="5" name="messageC" required />
               <FormButtonArea>
                 <FormButton
@@ -236,32 +302,60 @@ function ContactPage() {
 
           {/* contact tulcea */}
           <FormWrapper>
-            <LocationArea>
-              <p className="icon">
-                <IoLocationSharp />
-              </p>
-              <div>
-                <h2>Tulcea</h2>
-                <h3>Adresa:</h3>
-                <p>
-                  Str. Isaccei, Nr. 31 <br />
-                  Bl. 18, Sc. A, Ap. 6 - Parter
-                </p>
+            <ContactArea>
+              <div className="social">
+                <a
+                  className="icon"
+                  target="_blank"
+                  aria-label="Facebook"
+                  rel="noreferrer"
+                  href="https://www.facebook.com/Neurofeedback-Tulcea-100600829272771/"
+                >
+                  <i className="ri-facebook-circle-line"></i>
+                </a>
+                <a
+                  className="icon"
+                  target="_blank"
+                  aria-label="Instagram"
+                  rel="noreferrer"
+                  href="https://www.instagram.com/cerebrium_neurofeedback/"
+                >
+                  <i className="ri-instagram-line"></i>
+                </a>
               </div>
-            </LocationArea>
-            <ContactForm
-              ref={form}
-              id="formTl"
-              onSubmit={() => submitHandlerTl()}
-            >
-              <FormLabel htmlFor="name">Nume:</FormLabel>
+              <div className="contactData">
+                <div>
+                  <h2>Tulcea</h2>
+                  <p>Cabinet individual de psihologie CARP IONELA</p>
+                </div>
+
+                <div>
+                  <h3>Adresa:</h3>
+                  <p>
+                    Str. Isaccei, Nr. 31 <br />
+                    Bl. 18, Sc. A, Ap. 6 - Parter
+                  </p>
+                </div>
+
+                <div>
+                  <h3>Telefon:</h3>
+                  <p>
+                    <a className="telefon" href="tel:+40752028775">
+                      +40752 028 775
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </ContactArea>
+            <ContactForm ref={formTl} id="formTl" onSubmit={submitHandlerTl}>
+              <FormLabel htmlFor="name">Nume: *</FormLabel>
               <FormInput
                 type="text"
                 name="nameT"
                 required
                 placeholder="Numele si prenumele"
               />
-              <FormLabel htmlFor="email">Email:</FormLabel>
+              <FormLabel htmlFor="email">Email: *</FormLabel>
               <FormInput
                 type="email"
                 name="emailT"
@@ -269,10 +363,10 @@ function ContactPage() {
                 placeholder="Email-ul dumneavoastră"
               />
 
-              <FormLabel>Alege-ti o data: </FormLabel>
-              <FormInput type="date" name="dateC" />
+              <FormLabel>Numarul de telefon: </FormLabel>
+              <FormInput type="number" name="dateT" />
 
-              <FormLabel htmlFor="message">Mesaj:</FormLabel>
+              <FormLabel htmlFor="message">Mesaj: *</FormLabel>
               <FormTextArea cols="30" rows="5" name="messageT" required />
               <FormButtonArea>
                 <FormButton

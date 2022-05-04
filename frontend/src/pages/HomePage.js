@@ -34,7 +34,9 @@ function HomePage() {
           />
         </HeroBg>
         <HeroContent>
-          <HeroH2>Alături de noi grijile tale dispar!</HeroH2>
+          <HeroH2>
+            Optimizează-ți <b>Creierul</b>, <b>Îmbunătățește-ți</b> viața!
+          </HeroH2>
           <HeroH1>CEREBRIUM</HeroH1>
         </HeroContent>
       </HeroContainer>

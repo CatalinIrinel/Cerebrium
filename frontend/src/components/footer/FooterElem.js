@@ -148,9 +148,20 @@ export const WebsiteRights = styled.small`
   display: flex;
   align-items: center;
   justify-content: center;
+  a {
+    margin-left: 1rem;
+    color: #f5b315;
+    text-decoration: none;
+    cursor: pointer;
+  }
   @media screen and (max-width: 768.98px) {
     font-size: 1rem;
     width: fit-content;
+    height: auto;
+    flex-wrap: wrap;
+    a {
+      margin: 0;
+    }
   }
 `;
 

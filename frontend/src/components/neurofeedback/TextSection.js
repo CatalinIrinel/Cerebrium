@@ -10,6 +10,9 @@ const ParagrafArea = styled.div`
   & > * {
     margin-bottom: 0.8rem;
   }
+  @media screen and (max-width: 668px) {
+    text-align: justify;
+  }
 `;
 
 const Paragrafe = styled.p`
@@ -20,10 +23,13 @@ const Paragrafe = styled.p`
   text-indent: 20px;
 `;
 const TitleArea = styled.div`
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   @media screen and (max-width: 668px) {
-    width: 90%;
+    max-width: 350px;
+    width: 100%;
   }
 `;
 const Titles = styled.h2`
@@ -51,11 +57,16 @@ const Titles = styled.h2`
   }
 
   @media screen and (max-width: 668px) {
-    font-size: 1.2rem;
-    height: 50px;
+    font-size: 1rem;
+    height: fit-content;
+    width: 100%;
     max-height: none;
     overflow: hidden;
-    animation: typeEffect 1s steps(1000, end) forwards;
+    animation: none;
+    text-align: center;
+    border-right: none;
+    padding-left: 0;
+    padding-right: 0;
   }
 `;
 
@@ -81,10 +92,6 @@ const Item = styled.li`
   & > * {
     margin-right: 10px;
   }
-  .icon {
-    color: #90c747;
-    font-size: 1.5rem;
-  }
 `;
 
 function TextSection({ title, array }) {
@@ -102,67 +109,69 @@ function TextSection({ title, array }) {
         <ListArea>
           <Items>
             <Item>
-              <FaCheckSquare className="icon" /> Autism (TSA),
+              <FaCheckSquare className="iconCheck" /> Autism (TSA),
             </Item>
             <Item>
-              <FaCheckSquare className="icon" /> Deficit de atentie /
+              <FaCheckSquare className="iconCheck" /> Deficit de atentie /
               Hiperactivitate (ADHD)
             </Item>
             <Item>
-              <FaCheckSquare className="icon" /> Tulburări de limbaj la copii și
-              adulți
+              <FaCheckSquare className="iconCheck" /> Tulburări de limbaj la
+              copii și adulți
             </Item>
             <Item>
-              <FaCheckSquare className="icon" /> Epilepsie
+              <FaCheckSquare className="iconCheck" /> Epilepsie
             </Item>
             <Item>
-              <FaCheckSquare className="icon" /> Stres cronic, Anxietate,
+              <FaCheckSquare className="iconCheck" /> Stres cronic, Anxietate,
               Depresie
             </Item>
             <Item>
-              <FaCheckSquare className="icon" /> Epuizare
+              <FaCheckSquare className="iconCheck" /> Epuizare
             </Item>
             <Item>
-              <FaCheckSquare className="icon" /> Burnout
+              <FaCheckSquare className="iconCheck" /> Burnout
             </Item>
             <Item>
-              <FaCheckSquare className="icon" /> Dureri de cap, Migrene
+              <FaCheckSquare className="iconCheck" /> Dureri de cap, Migrene
             </Item>
             <Item>
-              <FaCheckSquare className="icon" /> Tulburări de somn, Insomnii
+              <FaCheckSquare className="iconCheck" /> Tulburări de somn,
+              Insomnii
             </Item>
           </Items>
 
           <Items>
             <Item>
-              <FaCheckSquare className="icon" /> Durere cronică, Hiperkinezie
+              <FaCheckSquare className="iconCheck" /> Durere cronică,
+              Hiperkinezie
             </Item>
             <Item>
-              <FaCheckSquare className="icon" /> Alcoolism
+              <FaCheckSquare className="iconCheck" /> Alcoolism
             </Item>
             <Item>
-              <FaCheckSquare className="icon" /> Dependențe, Adicții (jocuri de
-              noroc, consum de substanțe)
+              <FaCheckSquare className="iconCheck" /> Dependențe, Adicții
+              (jocuri de noroc, consum de substanțe)
             </Item>
             <Item>
-              <FaCheckSquare className="icon" /> Tulburari alimentare (
+              <FaCheckSquare className="iconCheck" /> Tulburari alimentare (
               Anorexie, Bulimie, Obezitate)
             </Item>
             <Item>
-              <FaCheckSquare className="icon" /> Traume și tulburări de stres
-              post-traumatic
+              <FaCheckSquare className="iconCheck" /> Traume și tulburări de
+              stres post-traumatic
             </Item>
             <Item>
-              <FaCheckSquare className="icon" /> Tulburări de comportament
+              <FaCheckSquare className="iconCheck" /> Tulburări de comportament
             </Item>
             <Item>
-              <FaCheckSquare className="icon" /> Tulburări de personalitate
+              <FaCheckSquare className="iconCheck" /> Tulburări de personalitate
             </Item>
             <Item>
-              <FaCheckSquare className="icon" /> Traumatisme cerebrale
+              <FaCheckSquare className="iconCheck" /> Traumatisme cerebrale
             </Item>
             <Item>
-              <FaCheckSquare className="icon" /> Recuperare dupa AVC
+              <FaCheckSquare className="iconCheck" /> Recuperare dupa AVC
             </Item>
           </Items>
         </ListArea>

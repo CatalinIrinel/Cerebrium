@@ -9,11 +9,21 @@ const ndOcolor = '#f5b315';
 export const InfoContainer = styled.div`
   color: #fff;
   height: auto;
-  background: ${({ lightBg }) =>
-    lightBg ? '#fff' : `linear-gradient(23deg, ${stBcolor} 40%, grey)`};
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+  background-image: repeating-linear-gradient(
+      315deg,
+      #00ffff2e 92%,
+      #073aff00 100%
+    ),
+    repeating-radial-gradient(
+      75% 75% at 238% 218%,
+      #00ffff12 30%,
+      #073aff14 39%
+    ),
+    radial-gradient(99% 99% at 109% 2%, #214222 0%, #073aff00 100%),
+    radial-gradient(99% 99% at 21% 78%, #214222 0%, #073aff00 100%),
+    radial-gradient(160% 154% at 711px -303px, #214222 0%, #214222 100%);
   overflow: hidden;
 
   @media screen and (max-width: 768px) {

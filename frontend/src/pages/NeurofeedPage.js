@@ -13,6 +13,7 @@ import {
   getActive,
 } from '../components/NeurofeedbackData';
 import TextSection from '../components/neurofeedback/TextSection';
+import MiniNav from '../components/MiniNav';
 
 const green = '#90c747';
 const blue = '#13113c';
@@ -49,6 +50,7 @@ const TextArea = styled.div`
 
   @media screen and (max-width: 668px) {
     width: 100%;
+    align-items: center;
   }
 `;
 
@@ -71,6 +73,12 @@ const ButtonsArea = styled.ul`
   flex-direction: column;
   justify-content: space-evenly;
   list-style: none;
+  @media screen and (max-width: 668px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
 `;
 
 const Buttons = styled.li`
@@ -87,6 +95,13 @@ const Buttons = styled.li`
     transform: translateX(20px) scale(1.1);
 
     color: ${orange};
+  }
+  @media screen and (max-width: 668px) {
+    &.active {
+      transform: none;
+
+      color: ${orange};
+    }
   }
 `;
 
@@ -132,6 +147,10 @@ const Title = styled.h2`
     width: 70%;
     height: 70%;
   }
+  @media screen {
+    font-size: 1rem;
+    text-align: center;
+  }
 `;
 
 const pageTitle = 'Neurofeedback-ul';
@@ -164,6 +183,7 @@ function NeurofeedPage() {
     <>
       <PageHeader pageTitle={pageTitle} />
       <Container>
+        <MiniNav />
         <Wrapper>
           <MenuArea>
             <ButtonsArea>
