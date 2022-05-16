@@ -13,7 +13,7 @@ export const neuroData = {
   bigButton: false,
   bigFont: false,
   buttonLink: '/ce-este-neurofeedback-ul',
-  img: '/images/s1.svg',
+  img: '/images/NILF_Logo_2_W.png',
   alt: 'programmer at desk',
   dataAosTxt: 'fade-left',
   dataAosImg: 'fade-right',

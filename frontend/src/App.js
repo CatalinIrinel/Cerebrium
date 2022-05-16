@@ -14,6 +14,9 @@ import Afectiuni from './pages/Afectiuni';
 import Serviciu from './pages/Serviciu';
 import Frecventa from './pages/Frecventa';
 import 'remixicon/fonts/remixicon.css';
+import ResursePage from './pages/ResursePage';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,6 +27,7 @@ function App() {
 
   return (
     <Router>
+      <ToastContainer position="top-center" limit={1} />
       <ScrollToTop />
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
@@ -34,6 +38,7 @@ function App() {
         <Route path="/servicii" element={<Servicii />} />
         <Route path="/frecventa-optima" element={<Frecventa />} />
         <Route path="/ce-este-neurofeedback-ul" element={<NeurofeedPage />} />
+        <Route path="/resurse" element={<ResursePage />} />
         <Route path="/despre" element={<AboutPage />} />
         <Route path="/" element={<HomePage />} />
       </Routes>

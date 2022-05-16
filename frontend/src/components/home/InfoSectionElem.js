@@ -11,19 +11,7 @@ export const InfoContainer = styled.div`
   height: auto;
   background-size: 100% 100%;
   background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
-  background-image: repeating-linear-gradient(
-      315deg,
-      #00ffff2e 92%,
-      #073aff00 100%
-    ),
-    repeating-radial-gradient(
-      75% 75% at 238% 218%,
-      #00ffff12 30%,
-      #073aff14 39%
-    ),
-    radial-gradient(99% 99% at 109% 2%, #214222 0%, #073aff00 100%),
-    radial-gradient(99% 99% at 21% 78%, #214222 0%, #073aff00 100%),
-    radial-gradient(160% 154% at 711px -303px, #214222 0%, #214222 100%);
+  background-image: url('/images/backgroundWeb.png');
   overflow: hidden;
 
   @media screen and (max-width: 768px) {
@@ -31,8 +19,11 @@ export const InfoContainer = styled.div`
     height: auto;
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 600px) {
     overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 `;
 
@@ -75,14 +66,15 @@ export const Column2 = styled.div`
 export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
-  padding-bottom: 60px;
   display: flex;
   flex-direction: column;
 
-  @media screen and (max-width: 575.98px) {
+  @media screen and (max-width: 600px) {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 6rem;
+    padding-bottom: 60px;
   }
 `;
 
@@ -92,7 +84,7 @@ export const TopLine = styled.h3`
   line-height: 16px;
   font-weight: 700;
   letter-spacing: 1.4px;
-  margin-bottom: 16px;
+  margin-bottom: 0;
 `;
 
 export const Heading = styled.h2`

@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import PageHeader from '../components/PageHeader';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import {
   Ce,
   Cand,
@@ -153,13 +153,17 @@ const Title = styled.h2`
   }
 `;
 
-const pageTitle = 'Neurofeedback-ul';
-
+const pageTitle = [
+  <p key="titleNeuro">
+    Optimizează-ți Creierul <br /> Îmbunătățește-ți viața!
+  </p>,
+];
 function NeurofeedPage() {
   const [getText, setGetText] = useState('');
   const [getTitle, setGetTitle] = useState('');
   const [isActive, setIsActive] = useState([]);
 
+  const idText = useRef();
   const changeText = async (id) => {
     let text = await id;
     await setGetText(text);
@@ -175,6 +179,7 @@ function NeurofeedPage() {
       return item;
     });
     setIsActive(updateList);
+    idText.current.scrollIntoView();
   };
   useEffect(() => {
     setIsActive(getActive);
@@ -204,7 +209,7 @@ function NeurofeedPage() {
               })}
             </ButtonsArea>
           </MenuArea>
-          <TextArea>
+          <TextArea ref={idText}>
             {getText === 'Ce' && <TextSection title={getTitle} array={Ce} />}
             {getText === 'Cand' && (
               <TextSection title={getTitle} array={Cand} />

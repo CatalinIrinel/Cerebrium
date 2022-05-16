@@ -1,7 +1,56 @@
 import styled from 'styled-components';
 
-const ndGcolor = '#00a31b';
+export const HeroHeader = styled.div`
+  width: 100%;
+  height: 400px;
+  margin-top: -90px;
+  background: url('/images/WebHeader.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media screen and (max-width: 575.98px) {
+    height: 350px;
+    margin-top: -3rem;
+    background-size: 900px 350px;
+  }
+`;
+export const HeroHeaderWrapper = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  padding-top: 5rem;
+`;
 
+export const HeaderTitle = styled.h1`
+  color: #f1f1f1;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 5rem;
+  &.side {
+    font-size: 2.2rem;
+  }
+  &.side.right {
+    text-align: right;
+  }
+  &.side.left {
+    text-align: left;
+  }
+  @media screen and (max-width: 575.98px) {
+    width: 300px;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    top: 10%;
+    margin-top: -2rem;
+    &.side {
+      display: none;
+    }
+  }
+`;
 export const HeroContainer = styled.div`
   background: #0c0c0c;
   display: flex;
@@ -11,7 +60,6 @@ export const HeroContainer = styled.div`
   height: 800px;
   position: relative;
   z-index: 1;
-  margin-top: -120px;
   /* add before styles */
   :before {
     content: '';
@@ -62,7 +110,7 @@ export const HeroContent = styled.div`
   align-items: center;
 `;
 
-export const HeroH1 = styled.h1`
+export const HeroH2 = styled.h1`
   color: #fff;
   font-size: 68px;
 
@@ -72,21 +120,6 @@ export const HeroH1 = styled.h1`
 
   @media screen and (max-width: 575.98px) {
     font-size: 38px;
-  }
-`;
-
-export const HeroH2 = styled.h2`
-  color: ${ndGcolor};
-  font-size: 20px;
-  b {
-    text-transform: uppercase;
-  }
-  @media screen and (max-width: 768px) {
-    font-size: 14px;
-  }
-
-  @media screen and (max-width: 575.98px) {
-    font-size: 13px;
   }
 `;
 

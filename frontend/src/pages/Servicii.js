@@ -11,10 +11,17 @@ const ServiciiContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   background: url('/images/bgServicii.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  & > span {
+    z-index: 3;
+    color: #fff;
+    opacity: 1;
+    font-size: 1.8rem;
+  }
   @media screen and (max-width: 575.98px) {
     padding: 10%;
   }
@@ -169,6 +176,9 @@ function Servicii() {
             </CardLink>
           ))}
         </Wrapper>
+        <span>
+          * pentru ședințele online se stabilește de comun accord cu pacientul
+        </span>
       </ServiciiContainer>
     </>
   );

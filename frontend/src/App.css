@@ -17,7 +17,6 @@
   --mainGcolor: #214222;
   --secondGcolor: #90c747;
 }
-
 .container {
   width: 100%;
   background-color: #3295c0;
@@ -42,6 +41,10 @@
   }
 }
 
+small p {
+  margin: 0;
+  margin-left: 1rem;
+}
 .copyrights {
   margin: 0 0.5rem;
 }
@@ -94,4 +97,37 @@ ul {
   100% {
     text-shadow: 0 0 5px #1877f2, 0 0 10px #1459b3, 0 0 15px #179bff;
   }
+}
+
+button.dropdown-toggle {
+  background: none;
+  border: none;
+}
+
+.dropdown-menu.show {
+  background: #13113c;
+  border: none;
+  color: white;
+}
+
+.dropdown-menu.show a:hover {
+  background: #2d2a5e;
+}
+
+button.dropdown-toggle:hover {
+  background: none;
+  box-shadow: none;
+}
+button.dropdown-toggle:focus {
+  background: none;
+  box-shadow: none;
+}
+.show > button.btn-primary.dropdown-toggle {
+  border: none;
+  background: none;
+}
+
+.show > button.btn-primary.dropdown-toggle:active,
+.show > button.btn-primary.dropdown-toggle:focus {
+  box-shadow: none;
 }

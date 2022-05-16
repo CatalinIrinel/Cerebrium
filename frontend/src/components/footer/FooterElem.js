@@ -149,7 +149,6 @@ export const WebsiteRights = styled.small`
   align-items: center;
   justify-content: center;
   a {
-    margin-left: 1rem;
     color: #f5b315;
     text-decoration: none;
     cursor: pointer;

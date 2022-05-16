@@ -12,12 +12,19 @@ const ContactContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   position: relative;
   z-index: 1;
   background-image: url('/images/Bg1.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  & > span {
+    z-index: 3;
+    color: #fff;
+    opacity: 1;
+    font-size: 1.8rem;
+  }
   :before {
     content: '';
     position: absolute;
@@ -147,6 +154,7 @@ const ContactArea = styled.div`
     flex-direction: column;
     justify-content: space-evenly;
     font-size: 3rem;
+
     a {
       text-decoration: none;
       color: #fff;
@@ -162,6 +170,12 @@ const ContactArea = styled.div`
     & > * {
       margin-bottom: 0.8rem;
     }
+    @media screen and (max-width: 600px) {
+      & > div > .smallText {
+        width: 200px;
+        height: 50px;
+      }
+    }
   }
 
   & > .icon {
@@ -169,7 +183,12 @@ const ContactArea = styled.div`
   }
 `;
 
-const pageTitle = 'Contactati-ne :)';
+const pageTitle = [
+  <p style={{ textAlign: 'center', fontSize: '3.5rem' }}>
+    Pentru programarea unei <br />
+    ședințe ne poți contacta mai jos{' '}
+  </p>,
+];
 
 function ContactPage() {
   const formCt = useRef();
@@ -219,6 +238,7 @@ function ContactPage() {
     <>
       <PageHeader pageTitle={pageTitle} />
       <ContactContainer>
+        <span>* ședințele se pot desfășura atât online cât și la cabinet</span>
         <ContactWrapper>
           {/* contact constanta */}
           <FormWrapper>
@@ -245,7 +265,8 @@ function ContactPage() {
               </div>
               <div className="contactData">
                 <div>
-                  <h2>Constanta</h2>
+                  <h2>Constanța</h2>
+                  <p className="smallText">Cabinet individual de psihologie</p>
                 </div>
 
                 <div>
@@ -282,7 +303,7 @@ function ContactPage() {
                 placeholder="Email-ul dumneavoastră"
               />
 
-              <FormLabel>Numarul de telefon: </FormLabel>
+              <FormLabel>Numărul de telefon: </FormLabel>
               <FormInput type="number" name="dateC" />
 
               <FormLabel htmlFor="message">Mesaj: *</FormLabel>
@@ -326,7 +347,9 @@ function ContactPage() {
               <div className="contactData">
                 <div>
                   <h2>Tulcea</h2>
-                  <p>Cabinet individual de psihologie CARP IONELA</p>
+                  <p className="smallText">
+                    Cabinet individual de psihologie CARP IONELA
+                  </p>
                 </div>
 
                 <div>
@@ -363,7 +386,7 @@ function ContactPage() {
                 placeholder="Email-ul dumneavoastră"
               />
 
-              <FormLabel>Numarul de telefon: </FormLabel>
+              <FormLabel>Numărul de telefon: </FormLabel>
               <FormInput type="number" name="dateT" />
 
               <FormLabel htmlFor="message">Mesaj: *</FormLabel>

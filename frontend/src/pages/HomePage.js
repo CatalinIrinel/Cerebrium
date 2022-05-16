@@ -1,10 +1,12 @@
 import React from 'react';
 import {
+  HeaderTitle,
   HeroBg,
   HeroContainer,
   HeroContent,
-  HeroH1,
   HeroH2,
+  HeroHeader,
+  HeroHeaderWrapper,
   VideoBg,
 } from '../components/home/HeroElem';
 import InfoSection from '../components/home/InfoSection';
@@ -16,11 +18,18 @@ import {
 import ServicesArea from '../components/home/ServicesArea';
 import video from '../videos/heroVideo.mp4';
 
-// import video from '../videos/bg.mp4';
-
 function HomePage() {
   return (
     <>
+      <HeroHeader>
+        <HeroHeaderWrapper>
+          <HeaderTitle>
+            Ești ceea ce gândești.
+            <br />
+            Fă-ți mintea să conteze!
+          </HeaderTitle>
+        </HeroHeaderWrapper>
+      </HeroHeader>
       <HeroContainer>
         <HeroBg>
           <VideoBg
@@ -34,10 +43,7 @@ function HomePage() {
           />
         </HeroBg>
         <HeroContent>
-          <HeroH2>
-            Optimizează-ți <b>Creierul</b>, <b>Îmbunătățește-ți</b> viața!
-          </HeroH2>
-          <HeroH1>CEREBRIUM</HeroH1>
+          <HeroH2>CEREBRIUM</HeroH2>
         </HeroContent>
       </HeroContainer>
       <InfoSection {...neuroData} />

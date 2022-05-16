@@ -116,7 +116,7 @@ function Modal({ showModal, setShowModal, details }) {
   });
   return (
     <>
-      {showModal ? (
+      {showModal && (
         <Background onClick={closeModal}>
           <animated.div style={animation}>
             <Container>
@@ -133,7 +133,7 @@ function Modal({ showModal, setShowModal, details }) {
             </Container>
           </animated.div>
         </Background>
-      ) : null}
+      )}
     </>
   );
 }

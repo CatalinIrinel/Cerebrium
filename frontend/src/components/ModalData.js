@@ -36,31 +36,108 @@ export const dataC1 = [
   },
   {
     id: 2,
-    title: 'Autism (TSA)',
+    title: 'Adicții și Abuz de Substanțe',
     text: [
-      <div>
+      <div className="modalTextArea">
         <p>
-          Creierele persoanelor cu TSA prezintă zone cu conectivitate excesiv de
-          mare și zone cu conectivitate deficitară.
+          Mulți oameni cred că dependența se datorează lipsei de
+          auto-disciplină, dar dependența este o condiție fiziologică și este
+          extrem de dificil să se schimbe. Dependenții se luptă cu emoții cum ar
+          fi vinovăția, rușinea, furia și frustrarea, care le împiedică în
+          continuare recuperarea.
         </p>
-
         <p>
-          Prin terapia cu <b>neurofeedback</b> creierul poate prin auto-reglare
-          să-și îmbunătățească conectivitatea neuronală și este capabil să
-          remedieze în mod semnificativ aceste anomalii și să reducă simptomele
-          autismului.
+          Dependența este o boală a creierului, o tulburare de sănătate mintală
+          care afectează grav o persoană în toate aspectele vieții sale.
+          Persoanele cu dependență suferă frecvent de alte tulburări de sănătate
+          mintală, cum ar fi depresia, tulburarea bipolară și anxietatea.
         </p>
-
         <p>
-          Terapia cu <b>Neurofeedback</b> poate remedia anomaliile din activarea
-          creierului, conducând la reducerea simptomelor și îmbunătățirea
-          funcțională (conform cercetărilor privind TSA).
+          În timpul momentelor de stres, o persoană cu dependență trebuie să
+          poată rămâne calmă, rezonabilă și rațională pentru a putea face
+          alegeri adecvate.
+        </p>
+        <p>
+          Antrenamentul Neurofeedback învață creierul unei persoane să opereze
+          într-o stare calmă, rațională, chiar și în situații stresante. Este o
+          terapie non-invazivă, fără efecte secundare. Conform studiilor de
+          cercetare, integrarea antrenamentului cu neurofeedback în programul de
+          tratament a demonstrat o rată mai mare de succes și o rată mai scăzută
+          de recidivă, decât în cazul programelor de tratament fără
+          neurofeedback.
+        </p>
+        <p>
+          Clinicienii care utilizează neurofeedback raportează că mai mult de
+          85% dintre clienții lor, care se antrenează cu neurofeedback își
+          îmbunătățesc capacitatea de a se concentra, de a-și regla
+          comportamentul și de a reduce impulsivitatea.
+        </p>
+        <p>
+          Deoarece neurofeedback-ul ajută o persoană să-și gestioneze emoțiile,
+          starea de spirit și să-și îmbunătățească somnul, adăugându-l în cadrul
+          programului de tratament al dependenței, putem ajuta pacientul să fie
+          mai în control, să obțină succes și să evite recidiva.
         </p>
       </div>,
     ],
   },
   {
     id: 3,
+    title: 'Alcoolism',
+    text: [
+      <div className="modalTextArea">
+        <p>
+          Alcoolismul afectează în mod dramatic creierul. Consumul excesiv de
+          alcool pe termen lung modifică modul în care creierul controlează
+          emoțiile și perturbă tiparele de somn, generând multiple efecte asupra
+          organismului. Dependența de alcool are numeroase efecte negative și
+          asupra veții sociale și familiale a alcoolicului.
+        </p>
+        <p>
+          Neurofeedbackul auto-reglează activitatea creierului, astfel efectul
+          pozitiv se reflectă în perioade mai mari de abstinență și perioade mai
+          mici de recidivă până la modificarea structurii personalității celui
+          afectat.
+        </p>
+      </div>,
+    ],
+  },
+  {
+    id: 4,
+    title: 'Amețeală - Vertij',
+    text: [
+      <div className="modalTextArea">
+        <p>
+          Vertijul este o falsă senzație de mișcare asociată cu tulburări de
+          echilibru sau de mers descrisă frecvent drept o “amețeală” sau “o
+          senzație de rotire” a persoanei sau a mediului înconjurător sau drept
+          senzație că “îți fuge pământul de sub picioare”. Alte persoane
+          afectate de vertij simt că “sunt trase într-o parte”. Așadar
+          manifestarile vertijului sunt diferite, deoarece acesta nu este o
+          boală în sine, ci un simptom.
+        </p>
+        <p>
+          Vertijul este corelat cu tulburări de funcționare a centrilor nervoși
+          cerebrali de aceea răspunde foarte bine la neurofeedack. Aceasta
+          metodă de terapie este o variantă naturală și eficientă atunci când nu
+          există cauze structurale.
+        </p>
+        <p>
+          Din perspectiva neurofeedback-ului, vertijul este văzut ca un
+          eveniment electric episodic, de mare intensitate, asemănător cu cel al
+          migrenelor.
+        </p>
+        <p>
+          Neurofeedback-ul are efect stabilizator asupra creierului, astfel că
+          ajută creierul să împiedice apariția acestor evenimente și să reducă
+          frecvența și intensitatea crizelor de vertij, de multe ori până la
+          dispariția lor.
+        </p>
+      </div>,
+    ],
+  },
+  {
+    id: 5,
     title: 'Anxietate',
     text: [
       <div className="modalTextArea">
@@ -104,7 +181,99 @@ export const dataC1 = [
     ],
   },
   {
-    id: 4,
+    id: 6,
+    title: 'Astmul Bronșic',
+    text: [
+      <div className="modalTextArea">
+        <p>
+          Astmul este o boală inflamatorie cronică care afectează căile
+          respiratorii și se manifestă printr-o hipereactivitate bronșică ce
+          conduce la episoade recurente de respirație șuierătoare (wheezing),
+          dispnee, senzație de presiune toracică și tuse, în special noaptea și
+          dimineața devreme. Tulburările psihice asociate mai frecvent sunt
+          anxietatea și tulburarea de comportament. Nu se știe însă dacă astmul
+          duce la probleme psihice sau problemele psihice cauzează astmul.
+        </p>
+        <p>
+          Antrenamentul cu Neurofeedback poate ajuta în reducerea frecvenței și
+          intensității crizelor de astm bronșic, prin creșterea stabilității
+          sistemului nervos autonom. Pacienții ajung să utilizeze inhalatoarele
+          foarte rar sau deloc.
+        </p>
+      </div>,
+    ],
+  },
+  {
+    id: 7,
+    title: 'Autism (TSA)',
+    text: [
+      <div>
+        <p>
+          Creierele persoanelor cu TSA prezintă zone cu conectivitate excesiv de
+          mare și zone cu conectivitate deficitară.
+        </p>
+
+        <p>
+          Prin terapia cu <b>neurofeedback</b> creierul poate prin auto-reglare
+          să-și îmbunătățească conectivitatea neuronală și este capabil să
+          remedieze în mod semnificativ aceste anomalii și să reducă simptomele
+          autismului.
+        </p>
+
+        <p>
+          Terapia cu <b>Neurofeedback</b> poate remedia anomaliile din activarea
+          creierului, conducând la reducerea simptomelor și îmbunătățirea
+          funcțională (conform cercetărilor privind TSA).
+        </p>
+      </div>,
+    ],
+  },
+  {
+    id: 8,
+    title: 'Bullying',
+    text: [
+      <div className="modalTextArea">
+        <p>
+          Bullying-ul este o problemă socială, iar hărțuirea poate provoca
+          probleme serioase de scădere a stimei de sine și a încrederii celor
+          care sunt hărțuiți, ducând la o calitate mai scăzută a vieții,
+          autovătămare și chiar sinucidere.
+        </p>
+        <p>
+          Cei mai vulnerabili la comportamentul de agresiune sunt copiii cu
+          ADHD, autism, sindrom Asperger, în general cei cu tulburari de
+          dezvoltare, devenind ținte mai ușoare din cauza anumitor comportamente
+          pe care tind să le manifeste (comportamente / comentarii impulsive,
+          neîndemânare, neînțelegerea spațiului personal, încălcarea limitelor
+          altora).
+        </p>
+      </div>,
+    ],
+  },
+  {
+    id: 9,
+    title: 'Demența',
+    text: [
+      <div className="modalTextArea">
+        <p>
+          Demența descrie un set de simptome care apar în tulburările
+          neurodegenerative și care se caracterizează prin pierderea treptată a
+          funcțiilor cognitive și comportamentale. Demenţa reprezintă scăderea
+          treptată, progresivă a funcţiilor mentale cum ar fi: gândirea,
+          judecata, comportamentul, limbajul, învăţarea şi memoria.
+        </p>
+        <p>
+          Deși este un domeniu relativ nou, studiile preliminare sugerează că
+          Neurofeedback-ul deoarece este non-invaziv reprezintă un tratament
+          complementar pentru demență, pentru îmbunătățirea funcției creierului,
+          a memoriei, tratarea simptomelor cognitive și afective, care se
+          bazează pe plasticitatea creierului.
+        </p>
+      </div>,
+    ],
+  },
+  {
+    id: 10,
     title: 'Depresie',
     text: [
       <div className="modalTextArea">
@@ -136,156 +305,35 @@ export const dataC1 = [
     ],
   },
   {
-    id: 5,
-    title: 'Tulburarea obsesiv-compulsivă',
+    id: 11,
+    title: 'Durere Cronică',
     text: [
       <div className="modalTextArea">
         <p>
-          Obiectivul pentru această tulburare este de a ajusta partea creierului
-          care este afectată să pună capăt repetiției continue a gândurilor sau
-          a comportamentelor.
+          Durerea care durează 3 luni sau mai mult este considerată a fi
+          cronica. Durerea este un mod al organismului uman de a reacționa
+          atunci când nu este în regulă ceva. În timp ce este normal ca
+          organismul uman să trimită semnale de durere în caz de traumatisme sau
+          boli, durerea care persistă după o boală sau un traumatism, nu este
+          normală.
         </p>
         <p>
-          Mulți profesioniști din domeniul sănătății care utilizează
-          neurofeedback-ul pentru a trata Tulburările obsesiv - compulsive (TOC)
-          remarcă scăderi semnificative ale simptomelor clienților lor după
-          antrenarea creierului.
+          Durerile cornice continuă să persiste și la săptămâni, luni sau ani
+          după recuperare. Unele persoane prezintă dureri cronice fără nici un
+          traumatism sau boală care să le-o declanșeze. Durerea cronică poate
+          apărea oriunde în organism și poate varia de la ușoară și sâcâitoare,
+          până la foarte severă influențând starea de dispoziție și abilitatea
+          de a funcționa normal.
         </p>
         <p>
-          Persoanele cu TOC după terapia cu neurofeedback nu mai trebuie să se
-          lupte pentru a opri gândurile și comportamentele repetitive nedorite.
-          Ei spun că mintea lor este mult mai liniștită și mai calmă.
-        </p>
-        <p>
-          Prin antenamentul Neurofeedback se localizează zonele creierului care
-          cauzează disfuncții și sunt antrenate pentru a crea modele mai
-          sănătoase ale undelor cerebrale. Cu o pregătire și o practică
-          suficientă, creierul începe de fapt să creeze aceste modele mai
-          funcționale pe cont propriu.
+          Terapia cu Neurofeedback este o formă non-invazivă care poate atenua
+          durerea, ducând până la dispariția ei.
         </p>
       </div>,
     ],
   },
   {
-    id: 6,
-    title: 'Tulburare de dispoziție - Bipolaritate',
-    text: [
-      <div className="modalTextArea">
-        <p>
-          Antrenarea creierului cu neurofeedback învață creierul să creeze
-          modele mai sănătoase de funcționare și să mențină o stare mai
-          consistentă.
-        </p>
-        <p>
-          Acest lucru ajută persoana să învețe autoreglarea, permițându-i să
-          obțină o mai bună stabilizare a dispoziției.
-        </p>
-        <p>
-          După începerea antrenamentului cu neurofeedback clienții observă că
-          pot din nou să aibă încredere în creierul lor. Clienții cu aceasta
-          tulburare care au urmat terapie cu neurofeedback au raportat mai
-          puțină sensibilitate la schimbările de dispoziție, capacitate crescută
-          de concentrare și manie redusă. Capacitatea lor de funcționare a
-          crescut deoarece au fost mai puțin reactivi și capabili tot mai des să
-          reacționeze și să acționeze în mod corespunzător.
-        </p>
-      </div>,
-    ],
-  },
-  {
-    id: 7,
-    title: 'Traume și Tulburări post-traumatice',
-    text: [
-      <div className="modalTextArea">
-        <p>
-          În contextul funcției cerebrale trauma poate fi definită ca orice
-          eveniment sau experiență care schimbă viziunea persoanei asura sa și a
-          locului său în lume. Poate să apară ca urmare a unui singur eveniment
-          sau să se poată dezvolta treptat datorită unui mediu amenințător sau
-          singur.
-        </p>
-        <p>
-          Activitatea creierului modificată de evenimente traumatice, poate fi o
-          povară grea pentru a fi purtată. Trauma este în general clasificată în
-          două categorii. Cel mai frecvent recunoscută este hipervigilența, mai
-          puțin cunoscută este înghețarea și disocierea.
-        </p>
-        <p>
-          Trauma se poate manifesta adesea ca o combinație a celor două,
-          deoarece sistemul nervos se schimbă între unul și celălalt. O stare
-          sporită de conștientizare face parte din răspunsul de luptă, ducând la
-          o stare de hipervigilență cronică. Această stare este asemănătoare cu
-          blocarea în "posturile de luptă" permanente, resursele creierului sunt
-          în alertă constantă, provocând reacții inadecvate sau chiar agresive
-          în situațiile de zi cu zi.
-        </p>
-        <p>
-          Terapia cu neurofeedback funcționează la nivel subconștient profund,
-          rupând ciclul traumelor și simptomelor post-traumatice.
-          Neurofeedback-ul dă creierului instrumentele necesare pentru a
-          reinterpreta evenimentele traumatice trecute (fără a trebui să vorbim
-          despre ele, să le explorăm sau să le retrăim).
-        </p>
-      </div>,
-    ],
-  },
-  {
-    id: 8,
-    title: 'Tulburări de învățare',
-    text: [
-      <div className="modalTextArea">
-        <p>
-          Studiile de cercetare arată că mai multe zone ale creierului lucrează
-          împreună în procesul de învățare. Aceste părți separate ale creierului
-          comunică reciproc la viteze extrem de rapide. În cazul în care timpul
-          de comunicare este chiar ușor oprit, pot exista deficiențe în
-          capacitatea de a învăța.
-        </p>
-        <p>
-          Noi cercetări arată că "formarea de conectivitate" pare să
-          îmbunătățească în mod constant dificultățile de învățare.
-        </p>
-        <p>
-          Neurofeedback-ul îmbunătățește de fapt abilitățile de învățare prin
-          antrenarea zonelor creierului responsabile cu abilitățile de învățare
-          sau de execuție, cum ar fi matematica, citirea și prelucrarea auditivă
-          și vizuală.
-        </p>
-        <p>
-          Antrenamentul cu neurofeedback poate îmbunătăți coordonarea și
-          comunicarea între diferitele zone ale creierului. Timpul îmbunătățit
-          în creier are un impact semnificativ asupra abilității de a învăța.
-          Neurofeedback vizează direct coordonarea și comunicarea între zonele
-          creierului pentru a îmbunătăți învățarea.
-        </p>
-      </div>,
-    ],
-  },
-  {
-    id: 9,
-    title: 'Traumatisc / Accident vascular cerebral (AVC)',
-    text: [
-      <div className="modalTextArea">
-        <p>
-          În mod tradițional, au existat puține opțiuni formale de reabilitare
-          pentru persoanele care au suferit un accident vascular cerebral sau
-          leziuni cerebrale traumatice cu mai mult de doi ani în urmă. Experții
-          au crezut că se pot face progrese în primii doi ani. Uneori poate fi
-          nevoie de o terapie suplimentară: fizică, vorbire sau ocupațională,
-          dar nu se așteaptă, de obicei, să apară progrese semnificative la acel
-          moment.
-        </p>
-        <p>
-          Terapia cu Neurofeedback poate aduce îmbunătățiri vizibile, chiar și
-          după doi ani. Neurofeedback devine din ce în ce mai recunoscut ca o
-          modalitate de tratament care poate ajuta reparația creierului însuși,
-          chiar și la mai mulți ani după ce a acesta a suferit o deteriorare.
-        </p>
-      </div>,
-    ],
-  },
-  {
-    id: 10,
+    id: 12,
     title: 'Epilepsie',
     text: [
       <div className="modalTextArea">
@@ -321,35 +369,154 @@ export const dataC1 = [
 
 export const dataC2 = [
   {
-    id: 11,
-    title: 'Durere cronică',
+    id: 13,
+    title: 'Fibromialgie',
     text: [
       <div className="modalTextArea">
         <p>
-          Durerea care durează 3 luni sau mai mult este considerată a fi
-          cronica. Durerea este un mod al organismului uman de a reacționa
-          atunci când nu este în regulă ceva. În timp ce este normal ca
-          organismul uman să trimită semnale de durere în caz de traumatisme sau
-          boli, durerea care persistă după o boală sau un traumatism, nu este
-          normală.
+          Fibromialgia este reprezentată de dureri în tot corpul, oboseală,
+          tulburări de somn, fiind adesea numita „boala invizibilă”. Unii
+          sugerează anomalii în chimia creierului, fapt care duce la depresie și
+          la o sensibilitate neobișnuită la durere, fiind o boală misterioasă.
         </p>
         <p>
-          Durerile cornice continuă să persiste și la săptămâni, luni sau ani
-          după recuperare. Unele persoane prezintă dureri cronice fără nici un
-          traumatism sau boală care să le-o declanșeze. Durerea cronică poate
-          apărea oriunde în organism și poate varia de la ușoară și sâcâitoare,
-          până la foarte severă influențând starea de dispoziție și abilitatea
-          de a funcționa normal.
-        </p>
-        <p>
-          Terapia cu Neurofeedback este o formă non-invazivă care poate atenua
-          durerea, ducând până la dispariția ei.
+          Neurofeedbackul stabilizează creierul, calmează mușchii, îmbunătățește
+          calitatea somnului, accelerând procesele de vindecare și îmbunătățește
+          capacitatea de funcționare a sistemului imunitar.
         </p>
       </div>,
     ],
   },
   {
-    id: 12,
+    id: 14,
+    title: 'Fobii',
+    text: [
+      <div className="modalTextArea">
+        <p>
+          Cu toții avem lucruri care ne înspăimântă sau ne îngrijorează. Uneori
+          încercăm să evităm lucrurile care ne incomodează și în general reușim
+          să ne controlam temerile. Cu toate acestea, unii oameni au reacții
+          puternice, iraționale și involuntare de frică, care îi determină să
+          evite locurile, situațiile sau obiectele obișnuite de zi cu zi, chiar
+          dacă știu că logic nu există niciun pericol. Frica nu are niciun sens,
+          dar se pare că nimic nu o poate opri.
+        </p>
+        <p>
+          Când se confruntă cu o situație care le provoacă teamă, oamenii pot
+          avea chiar un atac de panică, cu debut spontan, cu o stare de frică
+          intensă, care îi face să se simtă ca și cum ar putea să li se oprească
+          respirația și să leșine, să sufere un atac de cord sau să-și piardă
+          controlul și să moară. Persoanele care se confruntă cu aceste temeri
+          (în afara controlului), au o fobie.
+        </p>
+        <ul>
+          <h3>Cele mai răspândite fobii:</h3>
+          <li>Arahnofobia – frica de păianjeni</li>
+          <li>Ophidiofobia – frica de șerpi </li>
+          <li>Acrofobia – frica de înălțimi</li>
+          <li>Agorafobia – frica de spații largi și/sau aglomerate</li>
+          <li>Cinofobia – frica de câini</li>
+          <li>Astrafobia – frica de tunet și furtună</li>
+          <li>Claustrofobia – frica de spații închise</li>
+          <li>Misofobia – frica de germeni și bacterii</li>
+          <li>Aerofobia – frica de zbor (cu avionul)</li>
+          <li>Tripofobia – frica de găuri</li>
+        </ul>
+        <p>
+          În general,{' '}
+          <b>
+            <u>fobiile încep când o persoană este copil sau adolescent</u>
+          </b>
+          . Copiii au mai multe fobii legate de animale, fobii din mediul
+          natural și fobii legate de sânge-injecție-rănire, decât adolescenții
+          sau adulții. Fobiile situaționale încep de obicei când o persoană este
+          adultă.
+        </p>
+        <p>
+          Principalul simptom al unei fobii este acela că persoana se teme
+          puternic, mult mai mult decât majoritatea oamenilor, de a fi în jurul
+          unui obiect, de a fi într-o situație sau de a face o activitate. Chiar
+          și gândul la aceste lucruri poate provoca stres. Copiii își arată
+          stresul prin plâns, având crize de furie, înghetând sau lipindu-se de
+          altcineva. Adulții cu fobii știu că intensitatea fricii și a
+          îngrijorării pe care o simt este mai mare decat pericolul de a fi
+          ranit de obiect, situație sau activitate. Copiii însa nu înteleg acest
+          lucru despre fobiile lor.
+        </p>
+        <p>
+          Antrenamentul cu neurofeedback ajută la auto-reglarea creierului, fapt
+          care ajută persoana să acționeze cu o mai mare luciditate atunci când
+          se află într-o situatie inconfortabilă.
+        </p>
+      </div>,
+    ],
+  },
+  {
+    id: 15,
+    title: 'Hiperkinezie',
+    text: [
+      <div className="modalTextArea">
+        <p>
+          Hiperkinezia se caracterizează prin dificultăți în a fi atent,
+          activitate excesivă și comportament neadegvat, fără a ține cont de
+          consecințe, care nu sunt specifice vârstei. Terapia cu Neurofeedback
+          duce la reglarea emoțiilor.
+        </p>
+      </div>,
+    ],
+  },
+  {
+    id: 16,
+    title: 'Insomnie / Tulburări ale Somnului',
+    text: [
+      <div className="modalTextArea">
+        <p>
+          <b>Insomnia</b> poate fi o stare tranzitorie în perioade de stres,
+          îngrijorare sau boală, însă pentru unele persoane, este o afecțiune
+          care influențează viața de zi cu zi cu oboseala, starea proastă și
+          lipsa de concentrare. Poate avea un impact mare asupra vieții
+          profesionale, a relațiilor și a activităților sociale.
+        </p>
+        <p>
+          <b>Dificultățile de somn</b> pot fi: probleme de adormire, probleme de
+          somn toată noaptea, trezirea prea devreme, somn prelungit diurn. În
+          timpul somnului, creierul are șansa de a sorta, de a acorda prioritate
+          și de a completa toate informațiile luate în timpul zilei.
+          Funcționarea mintală scade aproape de două ori mai rapid decât
+          performanța fizică cu scăderea somnului.
+        </p>
+        <p>
+          Motivele pentru dificultățile de somn sunt variate. Pot fi cauzate de
+          stres, anxietate, traume sau gândire obișnuită. Oricare ar fi cauza,
+          creierul și-a pierdut capacitatea de a trece în starea corectă de
+          somn.
+        </p>
+        <p>
+          Neurofeedback-ul este foarte eficient pentru tratarea tulburărilor de
+          somn. Creierul poate fi ajutat să se adapteze la un nivel în care
+          organismul se poate calma și relaza. Prin antrenarea controlului
+          creierului și a flexibilității, tranziția sistemului nervos central de
+          la activare la odihnă este lină și se întâmplă în mod natural.
+        </p>
+      </div>,
+    ],
+  },
+  {
+    id: 17,
+    title: 'Memoria',
+    text: [
+      <div className="modalTextArea">
+        <p>
+          Prin Neurofeedback memoria și capacitatea de concentrare se
+          îmbunătățesc. Depindem de memorie pentru a gândi, a învăța, a lua
+          decizii și a interacționa cu alți oameni. Când memoria este perturbată
+          aceste facultăți mintale au de suferit.
+        </p>
+      </div>,
+    ],
+  },
+  {
+    id: 18,
     title: 'Migrene / Cefalee',
     text: [
       <div className="modalTextArea">
@@ -372,8 +539,194 @@ export const dataC2 = [
     ],
   },
   {
-    id: 13,
-    title: 'Ticuri nervoase, verbale, motorii',
+    id: 19,
+    title: 'Nevralgia de Trigemen',
+    text: [
+      <div className="modalTextArea">
+        {' '}
+        <p>
+          Nevralgia este durerea severă de-a lungul unui nerv.{' '}
+          <b>Nevralgia de trigemen</b> (cunoscută și sub denumirea de tic
+          Douloureux) este o afecțiune nervoasă care implică dureri profunde
+          faciale asemănătoare cu electroșocurile, cel mai des fiind localizate
+          în partea inferioară a feței și a maxilarului. Totuși simptomele pot
+          să apară oriunde în apropiere de nas, urechi, ochi sau buze.
+        </p>
+        <p>
+          Se consideră că nevralgia de trigemen este una dintre cele mai
+          dureroase condiții umane. Nervul trigemen (al cincilea nerv cranian)
+          este unul dintre principalii nervi ai feței. De fiecare parte a feței
+          există câte un nerv. Acesta traversează craniul, de la creier până în
+          fața urechii.
+        </p>
+        <ul>
+          <li>
+            Denumirea de nerv trigemen provine de la faptul că este împărțit în
+            trei ramuri principale:
+          </li>
+          <li>
+            - nervii din prima ramură merg spre scalp, frunte și în jurul
+            ochilor
+          </li>
+          <li>
+            - nervii din a doua ramură se întind în zona din jurul obrazului
+          </li>
+          <li>- nervii din a treia ramură acoperă zona maxilarului.</li>
+        </ul>
+        <p>
+          Ramurile nervului trigemen controlează senzațiile tactile și cele
+          dureroase de la nivelul creierului la față, de la dinți la gură,
+          mușchii folosiți pentru mestecat, producția salivară și lacrimală.
+        </p>
+        <p>
+          Apelând la terapia cu neurofeedback se poate obține o bună ameliorare
+          și reducerea medicației. Chirurgia nu mai este necesară, în multe
+          cazuri.
+        </p>
+      </div>,
+    ],
+  },
+  {
+    id: 20,
+    title: 'Oboseală cronică - Burnout',
+    text: [
+      <div className="modalTextArea">
+        <p>
+          Sindromul burnout se referă la stresul cronic ce epuizează corpul
+          fizic și emoțional, făcându-ne să ne simțim ineficienți și nefericiți.
+        </p>
+        <p>
+          Atunci când o persoană suferă de Burnout simte că „i s-au terminat
+          bateriile”, că nu mai este capabilă să funcționeze eficient nici la
+          nivel profesional, nici la nivel personal. Este important să știm că
+          epuizarea de acest tip apare treptat, făcând-o mai greu și mai tarziu
+          de recunoscut. Legătura dintre muncă și sănătate este parte a
+          sănătății cognitive și mentale a angajaților de la toate nivelurile.
+        </p>
+        <p>
+          Antrenamentul Neurofeedback găsește aplicații specifice și ajută
+          angajații ca parte a managementului sănătății la locul de muncă.
+        </p>
+      </div>,
+    ],
+  },
+  {
+    id: 21,
+    title: 'Performanța',
+    text: [
+      <div className="modalTextArea">
+        <p>
+          Concentrarea și echilibrul emoțional sunt cheia pentru performanța de
+          vârf în toate domeniile. Neurofeedbackul antreneaza creierul să
+          funcționeze mai eficient, îmbunătățeste funcționarea mentală și
+          stabilitatea emoțională.
+        </p>
+        <p>
+          Studiile arată că prin Neurofeedback se poate produce o crestere a IQ,
+          a performanței intelectuale, sportive, muzicale, a creativității și
+          învățarea limbilor straine. Atunci când învățăm o limbă străina sunt
+          exersate urmatoarele funcții cerebrale: concentrarea, atenția,
+          memoria, creativitatea, procesarea informațiilor, gândirea strategică,
+          etc.
+        </p>
+      </div>,
+    ],
+  },
+  {
+    id: 22,
+    title: 'Sciatica',
+    text: [
+      <div className="modalTextArea">
+        <p>
+          Este o afecțiune a nervului sciatic, care se manifestă prin dureri în
+          întreg membrul inferior. Această durere poate coborî de la șold până
+          la picioare.
+        </p>
+        <p>
+          Neurofeedbackul ajută la relaxarea musculară și reducerea compresiei
+          pe nervul sciatic. Au fost situații în care clienții au sesizat
+          dispariția durerii dupa prima ședinta, dar pentru un efect de durată
+          este nevoie de un minim de 10 sesiuni.
+        </p>
+      </div>,
+    ],
+  },
+  {
+    id: 23,
+    title: 'Sindrom Asperger',
+    text: [
+      <div className="modalTextArea">
+        <p>
+          Sindromul Asperger este una din tulburările care fac parte din
+          spectrul autist. Se caracterizează prin dificultăți de comunicare, de
+          interacțiune socială și prin comportamente repetitive și/sau rigide.
+          Putem observa la copiii și adulții care trăiesc cu această tulburare
+          faptul că au o inteligență medie sau ridicată, însă au probleme
+          sociale, ceea ce duce la stări de anxietate și depresie.
+        </p>
+      </div>,
+    ],
+  },
+  {
+    id: 24,
+    title: 'Sindrom Premenstrual și Menopauza',
+    text: [
+      <div className="modalTextArea">
+        <p>
+          Cercetări recente au evidențiat o legatură între sindromul
+          premenstrual și nivelurile scăzute ale serotoninei, substanța chimică
+          din creier care ajută la transmiterea semnalelor nervoase.
+        </p>
+        <p>
+          Anumite celule ale creierului care folosesc serotonina ca mesager sunt
+          implicate în controlul stării de bine, a atenției, somnului și
+          durerii.
+        </p>
+        <p>
+          Studiile arată că estrogenii protejează neuronii anumitor zone
+          cerebrale, în special cele responsabile de memorie și fluența verbală.
+          Fluctuațiile acestor hormoni în perioada menopauzei determină la unele
+          femei tulburări emoționale, de memorie, dificultăți de concentrare și
+          gândire, modificări de dispoziție (iritabilitate, tristețe, lipsă de
+          motivație, stres).
+        </p>
+        <p>
+          Prin terapia cu Neurofeedback se echilibrează dezechilibrele hormonale
+          și biochimice care pot duce la modificări ale creierului și ale
+          sistemului nervos.
+        </p>
+      </div>,
+    ],
+  },
+];
+
+export const dataC3 = [
+  {
+    id: 25,
+    title: 'Stres Cronic',
+    text: [
+      <div className="modalTextArea">
+        <p>
+          Atunci când corpul simte un pericol intră în starea de “luptă sau
+          fugi” și astfel energia care alimenta întregul corp este mobilizată
+          pentru ca persoana în cauză să se poată apăra. Atât creierul cât și
+          corpul reacționează la stres.
+        </p>
+        <p>
+          Stresul cronic poate produce modificări patologice în creierul normal
+          și în funcționarea fizio-bio-chimică.
+        </p>
+        <p>
+          Prin Neurofeedback creierul învață să se auto-regleze, devenind mai
+          flexibil în capacitatea sa de a găsi starea mentală optimă pentru a se
+          acomoda cerințelor mediului.
+        </p>
+      </div>,
+    ],
+  },
+  {
+    id: 26,
+    title: 'Ticuri Nervoase, Verbale, Motorii',
     text: [
       <div className="modalTextArea">
         <p>
@@ -433,7 +786,35 @@ export const dataC2 = [
     ],
   },
   {
-    id: 14,
+    id: 27,
+    title: 'Ticuri Verbale și Motorii - Sindromul Tourette',
+    text: [
+      <div className="modalTextArea">
+        <p>
+          Mișcările și sunetele incontrolabile sunt cunoscute sub numele de
+          ticuri. Ticurile reprezintă o afecțiune neurologică relativ rară,
+          numită și “boala ticurilor”. Sindromul apare din cauza unor disfuncții
+          la nivelul neurotransmițătorilor (dopamină și serotonină), care sunt
+          implicați în controlul mișcărilor corpului și care oferă starea
+          generală de bine.
+        </p>
+        <p>
+          Printre ticurile frecvent întâlnite amintim pe cele motorii, verbale,
+          nervoase, clipitul repetitiv, dificultăți în concentrare (cu sau fără
+          hiperactivitate), ridicatul brusc din umeri și emiterea unor sunete
+          neobișnuite.
+        </p>
+        <p>
+          Terapiile existente pot contribui la anumite îmbunătățiri ale
+          simptomelor, însă fără o influență asupra cursului bolii. Cu toate
+          acestea, neurofeedbackul reprezintă o metodă utilizată pentru
+          diminuarea acestor ticuri.
+        </p>
+      </div>,
+    ],
+  },
+  {
+    id: 28,
     title: 'Tinitus',
     text: [
       <div className="modalTextArea">
@@ -457,213 +838,173 @@ export const dataC2 = [
     ],
   },
   {
-    id: 15,
-    title: 'Amețeală - Vertij',
+    id: 29,
+    title: 'Traumatism / Accident Vascular Cerebral (AVC)',
     text: [
       <div className="modalTextArea">
         <p>
-          Vertijul este o falsă senzație de mișcare asociată cu tulburări de
-          echilibru sau de mers descrisă frecvent drept o “amețeală” sau “o
-          senzație de rotire” a persoanei sau a mediului înconjurător sau drept
-          senzație că “îți fuge pământul de sub picioare”. Alte persoane
-          afectate de vertij simt că “sunt trase într-o parte”. Așadar
-          manifestarile vertijului sunt diferite, deoarece acesta nu este o
-          boală în sine, ci un simptom.
+          În mod tradițional, au existat puține opțiuni formale de reabilitare
+          pentru persoanele care au suferit un accident vascular cerebral sau
+          leziuni cerebrale traumatice cu mai mult de doi ani în urmă. Experții
+          au crezut că se pot face progrese în primii doi ani. Uneori poate fi
+          nevoie de o terapie suplimentară: fizică, vorbire sau ocupațională,
+          dar nu se așteaptă, de obicei, să apară progrese semnificative la acel
+          moment.
         </p>
         <p>
-          Vertijul este corelat cu tulburări de funcționare a centrilor nervoși
-          cerebrali de aceea răspunde foarte bine la neurofeedack. Aceasta
-          metodă de terapie este o variantă naturală și eficientă atunci când nu
-          există cauze structurale.
-        </p>
-        <p>
-          Din perspectiva neurofeedback-ului, vertijul este văzut ca un
-          eveniment electric episodic, de mare intensitate, asemănător cu cel al
-          migrenelor.
-        </p>
-        <p>
-          Neurofeedback-ul are efect stabilizator asupra creierului, astfel că
-          ajută creierul să împiedice apariția acestor evenimente și să reducă
-          frecvența și intensitatea crizelor de vertij, de multe ori până la
-          dispariția lor.
+          Terapia cu Neurofeedback poate aduce îmbunătățiri vizibile, chiar și
+          după doi ani. Neurofeedback devine din ce în ce mai recunoscut ca o
+          modalitate de tratament care poate ajuta reparația creierului însuși,
+          chiar și la mai mulți ani după ce a acesta a suferit o deteriorare.
         </p>
       </div>,
     ],
   },
   {
-    id: 16,
-    title: 'Oboseală cronică - Burnout',
+    id: 30,
+    title: 'Traumatisme Cerebrale',
     text: [
       <div className="modalTextArea">
         <p>
-          Sindromul burnout se referă la stresul cronic ce epuizează corpul
-          fizic și emoțional, făcându-ne să ne simțim ineficienți și nefericiți.
+          Pentru persoanele cu traumatisme cerebrale, protocoalele încep cu
+          re-echilibrarea emoțională și psihologică. Prin Neurofeedback, se
+          recuperează funcțiile motorii și senzitive afectate sau chiar pierdute
+          în urma leziunilor cerebrale.
         </p>
         <p>
-          Atunci când o persoană suferă de Burnout simte că „i s-au terminat
-          bateriile”, că nu mai este capabilă să funcționeze eficient nici la
-          nivel profesional, nici la nivel personal. Este important să știm că
-          epuizarea de acest tip apare treptat, făcând-o mai greu și mai tarziu
-          de recunoscut. Legătura dintre muncă și sănătate este parte a
-          sănătății cognitive și mentale a angajaților de la toate nivelurile.
+          Scăderea spasticității musculare poate fi obținută ușor și rapid
+          (atunci când este prezentă) cu ajutorul neurofeedbackului. De asemenea
+          sunt restabilite și funcțiile cerebrale din zonele afectate.
         </p>
         <p>
-          Antrenamentul Neurofeedback găsește aplicații specifice și ajută
-          angajații ca parte a managementului sănătății la locul de muncă.
+          Terapia cu neurofeedback funcționează la nivel subconștient profund,
+          rupând ciclul traumelor și simptomelor post-traumatice.
         </p>
       </div>,
     ],
   },
   {
-    id: 17,
-    title: 'Nevralgia de trigemen',
+    id: 31,
+    title: 'Traume și Tulburări Post-Traumatice',
     text: [
       <div className="modalTextArea">
-        {' '}
         <p>
-          Nevralgia este durerea severă de-a lungul unui nerv.{' '}
-          <b>Nevralgia de trigemen</b> (cunoscută și sub denumirea de tic
-          Douloureux) este o afecțiune nervoasă care implică dureri profunde
-          faciale asemănătoare cu electroșocurile, cel mai des fiind localizate
-          în partea inferioară a feței și a maxilarului. Totuși simptomele pot
-          să apară oriunde în apropiere de nas, urechi, ochi sau buze.
+          În contextul funcției cerebrale trauma poate fi definită ca orice
+          eveniment sau experiență care schimbă viziunea persoanei asura sa și a
+          locului său în lume. Poate să apară ca urmare a unui singur eveniment
+          sau să se poată dezvolta treptat datorită unui mediu amenințător sau
+          singur.
         </p>
         <p>
-          Se consideră că nevralgia de trigemen este una dintre cele mai
-          dureroase condiții umane. Nervul trigemen (al cincilea nerv cranian)
-          este unul dintre principalii nervi ai feței. De fiecare parte a feței
-          există câte un nerv. Acesta traversează craniul, de la creier până în
-          fața urechii.
-        </p>
-        <ul>
-          <li>
-            Denumirea de nerv trigemen provine de la faptul că este împărțit în
-            trei ramuri principale:
-          </li>
-          <li>
-            - nervii din prima ramură merg spre scalp, frunte și în jurul
-            ochilor
-          </li>
-          <li>
-            - nervii din a doua ramură se întind în zona din jurul obrazului
-          </li>
-          <li>- nervii din a treia ramură acoperă zona maxilarului.</li>
-        </ul>
-        <p>
-          Ramurile nervului trigemen controlează senzațiile tactile și cele
-          dureroase de la nivelul creierului la față, de la dinți la gură,
-          mușchii folosiți pentru mestecat, producția salivară și lacrimală.
+          Activitatea creierului modificată de evenimente traumatice, poate fi o
+          povară grea pentru a fi purtată. Trauma este în general clasificată în
+          două categorii. Cel mai frecvent recunoscută este hipervigilența, mai
+          puțin cunoscută este înghețarea și disocierea.
         </p>
         <p>
-          Apelând la terapia cu neurofeedback se poate obține o bună ameliorare
-          și reducerea medicației. Chirurgia nu mai este necesară, în multe
-          cazuri.
+          Trauma se poate manifesta adesea ca o combinație a celor două,
+          deoarece sistemul nervos se schimbă între unul și celălalt. O stare
+          sporită de conștientizare face parte din răspunsul de luptă, ducând la
+          o stare de hipervigilență cronică. Această stare este asemănătoare cu
+          blocarea în "posturile de luptă" permanente, resursele creierului sunt
+          în alertă constantă, provocând reacții inadecvate sau chiar agresive
+          în situațiile de zi cu zi.
+        </p>
+        <p>
+          Terapia cu neurofeedback funcționează la nivel subconștient profund,
+          rupând ciclul traumelor și simptomelor post-traumatice.
+          Neurofeedback-ul dă creierului instrumentele necesare pentru a
+          reinterpreta evenimentele traumatice trecute (fără a trebui să vorbim
+          despre ele, să le explorăm sau să le retrăim).
         </p>
       </div>,
     ],
   },
   {
-    id: 18,
-    title: 'Astmul bronșic',
+    id: 32,
+    title: 'Tulburare de Dispoziție - Bipolaritate',
     text: [
       <div className="modalTextArea">
         <p>
-          Astmul este o boală inflamatorie cronică care afectează căile
-          respiratorii și se manifestă printr-o hipereactivitate bronșică ce
-          conduce la episoade recurente de respirație șuierătoare (wheezing),
-          dispnee, senzație de presiune toracică și tuse, în special noaptea și
-          dimineața devreme. Tulburările psihice asociate mai frecvent sunt
-          anxietatea și tulburarea de comportament. Nu se știe însă dacă astmul
-          duce la probleme psihice sau problemele psihice cauzează astmul.
+          Antrenarea creierului cu neurofeedback învață creierul să creeze
+          modele mai sănătoase de funcționare și să mențină o stare mai
+          consistentă.
         </p>
         <p>
-          Antrenamentul cu Neurofeedback poate ajuta în reducerea frecvenței și
-          intensității crizelor de astm bronșic, prin creșterea stabilității
-          sistemului nervos autonom. Pacienții ajung să utilizeze inhalatoarele
-          foarte rar sau deloc.
+          Acest lucru ajută persoana să învețe autoreglarea, permițându-i să
+          obțină o mai bună stabilizare a dispoziției.
+        </p>
+        <p>
+          După începerea antrenamentului cu neurofeedback clienții observă că
+          pot din nou să aibă încredere în creierul lor. Clienții cu aceasta
+          tulburare care au urmat terapie cu neurofeedback au raportat mai
+          puțină sensibilitate la schimbările de dispoziție, capacitate crescută
+          de concentrare și manie redusă. Capacitatea lor de funcționare a
+          crescut deoarece au fost mai puțin reactivi și capabili tot mai des să
+          reacționeze și să acționeze în mod corespunzător.
         </p>
       </div>,
     ],
   },
   {
-    id: 19,
-    title: 'Insomnie / Tulburări ale somnului',
+    id: 33,
+    title: 'Tulburarea Obsesiv-Compulsivă',
     text: [
       <div className="modalTextArea">
         <p>
-          <b>Insomnia</b> poate fi o stare tranzitorie în perioade de stres,
-          îngrijorare sau boală, însă pentru unele persoane, este o afecțiune
-          care influențează viața de zi cu zi cu oboseala, starea proastă și
-          lipsa de concentrare. Poate avea un impact mare asupra vieții
-          profesionale, a relațiilor și a activităților sociale.
+          Obiectivul pentru această tulburare este de a ajusta partea creierului
+          care este afectată să pună capăt repetiției continue a gândurilor sau
+          a comportamentelor.
         </p>
         <p>
-          <b>Dificultățile de somn</b> pot fi: probleme de adormire, probleme de
-          somn toată noaptea, trezirea prea devreme, somn prelungit diurn. În
-          timpul somnului, creierul are șansa de a sorta, de a acorda prioritate
-          și de a completa toate informațiile luate în timpul zilei.
-          Funcționarea mintală scade aproape de două ori mai rapid decât
-          performanța fizică cu scăderea somnului.
+          Mulți profesioniști din domeniul sănătății care utilizează
+          neurofeedback-ul pentru a trata Tulburările obsesiv - compulsive (TOC)
+          remarcă scăderi semnificative ale simptomelor clienților lor după
+          antrenarea creierului.
         </p>
         <p>
-          Motivele pentru dificultățile de somn sunt variate. Pot fi cauzate de
-          stres, anxietate, traume sau gândire obișnuită. Oricare ar fi cauza,
-          creierul și-a pierdut capacitatea de a trece în starea corectă de
-          somn.
+          Persoanele cu TOC după terapia cu neurofeedback nu mai trebuie să se
+          lupte pentru a opri gândurile și comportamentele repetitive nedorite.
+          Ei spun că mintea lor este mult mai liniștită și mai calmă.
         </p>
         <p>
-          Neurofeedback-ul este foarte eficient pentru tratarea tulburărilor de
-          somn. Creierul poate fi ajutat să se adapteze la un nivel în care
-          organismul se poate calma și relaza. Prin antrenarea controlului
-          creierului și a flexibilității, tranziția sistemului nervos central de
-          la activare la odihnă este lină și se întâmplă în mod natural.
+          Prin antenamentul Neurofeedback se localizează zonele creierului care
+          cauzează disfuncții și sunt antrenate pentru a crea modele mai
+          sănătoase ale undelor cerebrale. Cu o pregătire și o practică
+          suficientă, creierul începe de fapt să creeze aceste modele mai
+          funcționale pe cont propriu.
         </p>
       </div>,
     ],
   },
   {
-    id: 20,
-    title: 'Adicții și Abuz de substanțe',
+    id: 34,
+    title: 'Tulburări de învățare',
     text: [
       <div className="modalTextArea">
         <p>
-          Mulți oameni cred că dependența se datorează lipsei de
-          auto-disciplină, dar dependența este o condiție fiziologică și este
-          extrem de dificil să se schimbe. Dependenții se luptă cu emoții cum ar
-          fi vinovăția, rușinea, furia și frustrarea, care le împiedică în
-          continuare recuperarea.
+          Studiile de cercetare arată că mai multe zone ale creierului lucrează
+          împreună în procesul de învățare. Aceste părți separate ale creierului
+          comunică reciproc la viteze extrem de rapide. În cazul în care timpul
+          de comunicare este chiar ușor oprit, pot exista deficiențe în
+          capacitatea de a învăța.
         </p>
         <p>
-          Dependența este o boală a creierului, o tulburare de sănătate mintală
-          care afectează grav o persoană în toate aspectele vieții sale.
-          Persoanele cu dependență suferă frecvent de alte tulburări de sănătate
-          mintală, cum ar fi depresia, tulburarea bipolară și anxietatea.
+          Noi cercetări arată că "formarea de conectivitate" pare să
+          îmbunătățească în mod constant dificultățile de învățare.
         </p>
         <p>
-          În timpul momentelor de stres, o persoană cu dependență trebuie să
-          poată rămâne calmă, rezonabilă și rațională pentru a putea face
-          alegeri adecvate.
+          Neurofeedback-ul îmbunătățește de fapt abilitățile de învățare prin
+          antrenarea zonelor creierului responsabile cu abilitățile de învățare
+          sau de execuție, cum ar fi matematica, citirea și prelucrarea auditivă
+          și vizuală.
         </p>
         <p>
-          Antrenamentul Neurofeedback învață creierul unei persoane să opereze
-          într-o stare calmă, rațională, chiar și în situații stresante. Este o
-          terapie non-invazivă, fără efecte secundare. Conform studiilor de
-          cercetare, integrarea antrenamentului cu neurofeedback în programul de
-          tratament a demonstrat o rată mai mare de succes și o rată mai scăzută
-          de recidivă, decât în cazul programelor de tratament fără
-          neurofeedback.
-        </p>
-        <p>
-          Clinicienii care utilizează neurofeedback raportează că mai mult de
-          85% dintre clienții lor, care se antrenează cu neurofeedback își
-          îmbunătățesc capacitatea de a se concentra, de a-și regla
-          comportamentul și de a reduce impulsivitatea.
-        </p>
-        <p>
-          Deoarece neurofeedback-ul ajută o persoană să-și gestioneze emoțiile,
-          starea de spirit și să-și îmbunătățească somnul, adăugându-l în cadrul
-          programului de tratament al dependenței, putem ajuta pacientul să fie
-          mai în control, să obțină succes și să evite recidiva.
+          Antrenamentul cu neurofeedback poate îmbunătăți coordonarea și
+          comunicarea între diferitele zone ale creierului. Timpul îmbunătățit
+          în creier are un impact semnificativ asupra abilității de a învăța.
+          Neurofeedback vizează direct coordonarea și comunicarea între zonele
+          creierului pentru a îmbunătăți învățarea.
         </p>
       </div>,
     ],
@@ -691,7 +1032,7 @@ export const dataServicii = [
           <b>Consilierea psihologică</b> este o intervenție psihologică în
           scopul optimizării, autocunoașterii și dezvoltării personale și / sau
           în scopul promovării sănătății, prevenției și remiterii problemelor
-          emoționale, cognitive și de comportament, ce se dresează problemelor
+          emoționale, cognitive și de comportament, ce se adresează problemelor
           pe care le poate avea o persoană în plan emoțional, profesional,
           social și chiar fizic. <b>Consilierea psihologică</b> poate fi
           individuală, de grup (cuplu, familie) sau în grup.
@@ -767,7 +1108,7 @@ export const dataServicii = [
             armonioase,
           </li>
           <li>
-            vei întelege mai bine ce se întâmplă cu tine și cu cei din jurul tău
+            vei înțelege mai bine ce se întâmplă cu tine și cu cei din jurul tău
           </li>
           <li>
             vei învăța să fii o persoană asertivă atât în viața personală cât și
@@ -841,8 +1182,8 @@ export const dataServicii = [
     price: [
       <p>
         Preț:
-        <br /> Copii: 150 RON / maxim 90 de minute ședința <br /> Adulți: 200
-        RON / maxim 90 de minute ședința
+        <br /> Copii: 150 RON / maxim 60 de minute ședința <br /> Adulți: 200
+        RON / maxim 60 de minute ședința
       </p>,
     ],
     online: false,
@@ -1308,7 +1649,7 @@ export const dataServicii = [
           </p>
           {/* aici trebuie verificat */}
           <p>
-            Diversele zone cerebrale sunt răspunzătoare de funcţii diferite, de
+            Diverse zone cerebrale sunt răspunzătoare de funcţii diferite, de
             aceea, zona unde se amplasează senzorii variază în funcţie de
             problema ce se doreşte a fi rezolvată. Clientul joacă un joc condus
             de creierul său. El urmărește succesiuni de imagini, jocuri video
@@ -1406,11 +1747,11 @@ export const dataServicii = [
     // _id: 4,
     link: 'serviciu',
     slug: 'terapie-aba',
-    title: 'Terapie ABA - Analiza Aplicată a Comportamentului',
+    title: 'Terapie ABA - Analiză Aplicată a Comportamentului',
     price: [
       <p>
         Preț:
-        <br /> Copii: 100 RON / 90 de minute ședința
+        <br /> Copii: 120 RON / 90 de minute ședința
       </p>,
     ],
     online: false,

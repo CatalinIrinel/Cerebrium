@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import PageHeader from '../components/PageHeader';
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 import Modal from '../components/Modal';
-import { dataC2, dataC1 } from '../components/ModalData';
+import { dataC2, dataC1, dataC3 } from '../components/ModalData';
 import MiniNav from '../components/MiniNav';
 
 const green = '#90c747';
@@ -21,7 +21,7 @@ const AfectWrapper = styled.div`
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 4rem 6rem;
   @media screen and (max-width: 768.98px) {
     flex-direction: column;
@@ -30,8 +30,8 @@ const AfectWrapper = styled.div`
 `;
 
 const ColumnsArea = styled.div`
-  width: 750px;
-  max-width: 50%;
+  max-width: 500px;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -100,6 +100,7 @@ const pageTitle = 'Afecțiuni';
 function Afectiuni() {
   const [showModal, setShowModal] = useState(false);
   const [showText, setShowText] = useState([]);
+  const [index, setIndex] = useState();
 
   const modalHandlerOpen = () => {
     setShowModal((prev) => !prev);
@@ -119,6 +120,7 @@ function Afectiuni() {
                     onClick={() => {
                       modalHandlerOpen();
                       setShowText(item);
+                      setIndex(index);
                     }}
                   >
                     {item.title}
@@ -136,6 +138,25 @@ function Afectiuni() {
                     onClick={() => {
                       modalHandlerOpen();
                       setShowText(item);
+                      setIndex(index);
+                    }}
+                  >
+                    {item.title}
+                  </AfectTitles>
+                </div>
+              );
+            })}
+          </ColumnsArea>
+          <ColumnsArea>
+            {dataC3.map((item, index) => {
+              return (
+                <div key={index}>
+                  <AfectTitles
+                    id={item.id}
+                    onClick={() => {
+                      modalHandlerOpen();
+                      setShowText(item);
+                      setIndex(index);
                     }}
                   >
                     {item.title}
@@ -146,6 +167,7 @@ function Afectiuni() {
           </ColumnsArea>
         </AfectWrapper>
         <Modal
+          key={index}
           showModal={showModal}
           setShowModal={setShowModal}
           details={showText}

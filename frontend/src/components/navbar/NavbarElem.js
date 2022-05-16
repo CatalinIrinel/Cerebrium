@@ -5,8 +5,7 @@ import { Link as LinkR } from 'react-router-dom';
 const secondBcolor = '#13113c';
 
 export const Nav = styled.nav`
-  background: ${({ scrollNav }) =>
-    scrollNav ? `${secondBcolor}` : `transparent`};
+  background: ${secondBcolor};
   height: 90px;
   /* margin-top: -120px; */
   display: flex;
@@ -92,6 +91,8 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
+  margin: 0;
+  padding: 0;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -100,6 +101,8 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
   height: 80px;
+  display: flex;
+  align-items: center;
 `;
 
 export const NavLinks = styled(LinkR)`
@@ -111,7 +114,16 @@ export const NavLinks = styled(LinkR)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
-
+  &.normal-case {
+    width: 230px;
+    text-transform: none;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+  }
   &.active {
     border-bottom: 3px solid #fff;
   }

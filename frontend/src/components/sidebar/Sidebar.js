@@ -24,6 +24,10 @@ function Sidebar({ isOpen, toggle }) {
             Despre Cerebrium
           </SidebarLink>
 
+          <SidebarLink to="#" onClick={toggle}>
+            Resurse
+          </SidebarLink>
+
           <SidebarLink to="/ce-este-neurofeedback-ul" onClick={toggle}>
             Ce este Neurofeedback-ul?
           </SidebarLink>

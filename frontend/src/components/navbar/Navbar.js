@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { FaBars } from 'react-icons/fa';
+import Dropdown from 'react-bootstrap/Dropdown';
 import {
   MobileIcon,
   Nav,
@@ -40,7 +41,10 @@ function Navbar({ toggle }) {
             <NavLinks to="/">Acasă</NavLinks>
           </NavItem>
           <NavItem>
-            <NavLinks to="/">Despre Cerebrium</NavLinks>
+            <NavLinks to="/despre">Despre Cerebrium</NavLinks>
+          </NavItem>
+          <NavItem>
+            <NavLinks to="#">Resurse</NavLinks>
           </NavItem>
         </NavMenu>
         <NavLogoLink to="/">
@@ -56,6 +60,28 @@ function Navbar({ toggle }) {
           <FaBars />
         </MobileIcon>
         <NavMenu>
+          <NavItem>
+            <Dropdown>
+              <Dropdown.Toggle id="dropdown-basic">
+                NEUROFEEDBACK
+              </Dropdown.Toggle>
+
+              <Dropdown.Menu>
+                <NavLinks
+                  className="normal-case"
+                  to="/ce-este-neurofeedback-ul"
+                >
+                  Ce este Neurofeedback-ul?
+                </NavLinks>
+                <NavLinks className="normal-case" to="/afectiuni">
+                  Ce afecțiuni se pot trata?
+                </NavLinks>
+                <NavLinks className="normal-case" to="/frecventa-optima">
+                  Ce este frecvența optimă?
+                </NavLinks>
+              </Dropdown.Menu>
+            </Dropdown>
+          </NavItem>
           <NavItem>
             <NavLinks to="/servicii">Serviciile Noastre</NavLinks>
           </NavItem>
