@@ -7,7 +7,7 @@ export const neuroData = {
   topLine: 'Tehnică revoluționară',
   headline: 'Neurofeedback IFL',
   description:
-    'Înainte de începerea terapiei propriu-zise are loc o evaluare psihologică detaliată a clientului apoi este stabilit protocolul personalizat care va fi urmat. Ședințele de neurofeedback asigură claritate, liniște și echilibru, aspecte foarte importante pentru reușita procesului terapeutic.',
+    'Înainte de începerea terapiei propriu-zise are loc anamneza clientului, după care se stabilește protocolul personalizat care va fi urmat. Ședințele de neurofeedback asigură claritate, liniște și echilibru, aspecte foarte importante pentru reușita procesului terapeutic.',
   buttonLabel: 'Descoperă Neurofeedback-ul',
   fullButton: false,
   bigButton: false,
@@ -26,7 +26,8 @@ export const serviciiData = {
   lightBg: false,
   lightText: true,
   darkText: false,
-  headline: 'O metodă extrem de eficientă de optimizare a funcţiei creierului',
+  headline:
+    'O metodă extrem de eficientă de optimizare a funcţiilor creierului',
   topLine: 'Neurofeedback',
 };
 export const contactData = {

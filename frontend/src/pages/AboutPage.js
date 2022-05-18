@@ -220,7 +220,6 @@ export const NavLinks = styled.button`
   font-size: 1.4rem;
   position: relative;
   padding: 0.8rem 1.5rem;
-  margin-bottom: 3rem;
   &::after {
     content: '';
     display: block;
@@ -258,6 +257,9 @@ export const NavLinks = styled.button`
   :hover::before {
     width: 100%;
     height: 100%;
+  }
+  @media screen and (max-width: 600px) {
+    margin-bottom: 3rem;
   }
 `;
 

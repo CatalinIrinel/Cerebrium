@@ -10,6 +10,18 @@ const FrecventaContainer = styled.div`
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
+  background: radial-gradient(
+    hsl(85.78, 53.33%, 52.94%),
+    hsl(88.97, 46.03%, 49.41%),
+    hsl(92.35, 43.59%, 45.88%),
+    hsl(95.6, 42.33%, 42.16%),
+    hsl(99.75, 40.82%, 38.43%),
+    hsl(103.48, 38.98%, 34.71%),
+    hsl(107.59, 36.71%, 30.98%),
+    hsl(112.65, 35.25%, 27.25%),
+    hsl(117, 33.33%, 23.53%),
+    hsl(121.82, 33.33%, 19.41%)
+  );
 `;
 const Wrapper = styled.div`
   width: 100%;
@@ -19,6 +31,7 @@ const Wrapper = styled.div`
   justify-content: flex-start;
   flex-wrap: wrap;
   font-size: 1.2rem;
+  color: #fff;
   h2 {
     font-size: 1.2rem;
     font-weight: normal;

@@ -5,7 +5,7 @@ const data = {
       alt: 'brain mapping cerebrium afectiuni',
       title: 'Afecțiuni',
       descriere:
-        'Multiple afecțiuni pot fi ținute sub control cu ajutorul neurofeedback-ului cu frecvențe foarte joase. Puteți vedea aici lista completă și beneficiile aduse în urma sedințelor de neurofeedback.',
+        'Neurofeedback-ul este recomandat pentru o gamă largă de afecțiuni ce pot fi ținute sub control cu ajutorul neurofeedback-ului cu frecvențe foarte joase. Puteți vedea aici lista completă și beneficiile aduse în urma sedințelor de neurofeedback.',
       buttonLink: '/afectiuni',
       buttonText: 'Mai multe detalii',
     },

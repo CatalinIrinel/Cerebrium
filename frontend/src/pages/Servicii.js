@@ -12,15 +12,24 @@ const ServiciiContainer = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: url('/images/bgServicii.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+
+  background: linear-gradient(
+    180deg,
+    hsla(24, 100%, 50%, 0.6),
+    hsla(8.33, 100%, 57.65%, 0.6),
+    hsla(344.71, 100%, 50%, 0.6),
+    hsla(338.35, 100%, 50%, 0.6),
+    hsla(331.29, 100%, 50%, 0.6),
+    hsla(323.76, 100%, 50%, 0.6),
+    hsla(313.96, 100%, 48.04%, 0.6),
+    hsla(296.5, 100%, 43.73%, 0.6),
+    hsla(276.71, 100%, 50%, 0.6)
+  );
   & > span {
     z-index: 3;
     color: #fff;
     opacity: 1;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
   }
   @media screen and (max-width: 575.98px) {
     padding: 10%;
@@ -177,7 +186,7 @@ function Servicii() {
           ))}
         </Wrapper>
         <span>
-          * pentru ședințele online se stabilește de comun accord cu pacientul
+          * pentru ședințele online se stabilește de comun acord cu pacientul
         </span>
       </ServiciiContainer>
     </>

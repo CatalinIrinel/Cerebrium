@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import PageHeader from '../components/PageHeader';
 import styled from 'styled-components/macro';
 import {
@@ -15,8 +15,6 @@ import {
 import TextSection from '../components/neurofeedback/TextSection';
 import MiniNav from '../components/MiniNav';
 
-const green = '#90c747';
-const blue = '#13113c';
 const orange = '#f58115';
 
 const Container = styled.div`
@@ -25,6 +23,18 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  background: radial-gradient(
+    hsl(85.78, 53.33%, 52.94%),
+    hsl(88.97, 46.03%, 49.41%),
+    hsl(92.35, 43.59%, 45.88%),
+    hsl(95.6, 42.33%, 42.16%),
+    hsl(99.75, 40.82%, 38.43%),
+    hsl(103.48, 38.98%, 34.71%),
+    hsl(107.59, 36.71%, 30.98%),
+    hsl(112.65, 35.25%, 27.25%),
+    hsl(117, 33.33%, 23.53%),
+    hsl(121.82, 33.33%, 19.41%)
+  );
 `;
 
 const Wrapper = styled.div`
@@ -48,6 +58,7 @@ const TextArea = styled.div`
   margin-bottom: 4rem;
   width: 70%;
 
+  color: #fff;
   @media screen and (max-width: 668px) {
     width: 100%;
     align-items: center;
@@ -86,67 +97,31 @@ const Buttons = styled.li`
   padding: 1rem;
   margin: 0.3rem 0;
   transition: transform 0.4s ease-in-out;
-  color: ${blue};
+  color: #fff;
   font-weight: bold;
   cursor: pointer;
   position: relative;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  background-color: ${orange};
 
   &.active {
     transform: translateX(20px) scale(1.1);
-
-    color: ${orange};
   }
   @media screen and (max-width: 668px) {
     &.active {
       transform: none;
-
-      color: ${orange};
     }
+  }
+  &:hover {
+    color: #214222;
   }
 `;
 
 const Title = styled.h2`
   font-size: 1.1rem;
   width: fit-content;
-
-  &::after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 20%;
-    height: 20%;
-    border: 2px solid;
-    transition: all 0.6s ease-in-out;
-    border-radius: 2px;
-    bottom: 0;
-    right: 0;
-    border-top-color: transparent;
-    border-left-color: transparent;
-    border-bottom-color: ${blue};
-    border-right-color: ${blue};
-  }
-
-  &::before {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 20%;
-    height: 20%;
-    border: 2px solid;
-    transition: all 0.6s ease-in-out;
-    top: 0;
-    left: 0;
-    border-top-color: ${green};
-    border-left-color: ${green};
-    border-bottom-color: transparent;
-    border-right-color: transparent;
-  }
-
-  &:hover::after,
-  :hover::before {
-    width: 70%;
-    height: 70%;
-  }
+  margin: 0;
   @media screen {
     font-size: 1rem;
     text-align: center;
@@ -155,7 +130,7 @@ const Title = styled.h2`
 
 const pageTitle = [
   <p key="titleNeuro">
-    Optimizează-ți Creierul <br /> Îmbunătățește-ți viața!
+    Optimizează-ți Creierul! <br /> Îmbunătățește-ți viața!
   </p>,
 ];
 function NeurofeedPage() {
@@ -163,7 +138,6 @@ function NeurofeedPage() {
   const [getTitle, setGetTitle] = useState('');
   const [isActive, setIsActive] = useState([]);
 
-  const idText = useRef();
   const changeText = async (id) => {
     let text = await id;
     await setGetText(text);
@@ -179,7 +153,6 @@ function NeurofeedPage() {
       return item;
     });
     setIsActive(updateList);
-    idText.current.scrollIntoView();
   };
   useEffect(() => {
     setIsActive(getActive);
@@ -209,7 +182,7 @@ function NeurofeedPage() {
               })}
             </ButtonsArea>
           </MenuArea>
-          <TextArea ref={idText}>
+          <TextArea>
             {getText === 'Ce' && <TextSection title={getTitle} array={Ce} />}
             {getText === 'Cand' && (
               <TextSection title={getTitle} array={Cand} />

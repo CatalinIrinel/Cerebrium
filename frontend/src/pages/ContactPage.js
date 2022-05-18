@@ -23,7 +23,10 @@ const ContactContainer = styled.div`
     z-index: 3;
     color: #fff;
     opacity: 1;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
+    @media screen {
+      text-align: center;
+    }
   }
   :before {
     content: '';
@@ -184,9 +187,8 @@ const ContactArea = styled.div`
 `;
 
 const pageTitle = [
-  <p style={{ textAlign: 'center', fontSize: '3.5rem' }}>
-    Pentru programarea unei <br />
-    ședințe ne poți contacta mai jos{' '}
+  <p className="contactTitle">
+    Pentru programarea unei ședințe ne poți contacta mai jos{' '}
   </p>,
 ];
 

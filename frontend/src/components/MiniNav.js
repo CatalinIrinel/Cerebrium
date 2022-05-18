@@ -10,7 +10,7 @@ export const NavbarContainer = styled.div`
   z-index: 1;
   width: 100%;
   padding: 0 1.5rem;
-  max-width: 1600px;
+  max-width: 1300px;
   margin-top: 2rem;
   @media screen and (max-width: 768.98px) {
     justify-content: space-between;
@@ -44,7 +44,7 @@ export const NavItem = styled.li`
 const blue = '#13113c';
 const orange = '#f58115';
 export const NavLinks = styled(Link)`
-  color: #000;
+  color: #fff;
   text-transform: uppercase;
   display: flex;
   align-items: center;
@@ -55,46 +55,11 @@ export const NavLinks = styled(Link)`
   font-size: 1.4rem;
   position: relative;
   padding: 0.8rem 1.5rem;
+  background-color: ${blue};
+  border-radius: 1rem;
+  transition: color 0.4s ease-in-out;
   &:hover {
-    color: #000;
-  }
-  &::after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 20%;
-    height: 20%;
-    border: 2px solid;
-    transition: all 0.6s ease-in-out;
-    border-radius: 2px;
-    bottom: 0;
-    right: 0;
-    border-top-color: transparent;
-    border-left-color: transparent;
-    border-bottom-color: ${blue};
-    border-right-color: ${blue};
-  }
-
-  &::before {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 20%;
-    height: 20%;
-    border: 2px solid;
-    transition: all 0.6s ease-in-out;
-    top: 0;
-    left: 0;
-    border-top-color: ${orange};
-    border-left-color: ${orange};
-    border-bottom-color: transparent;
-    border-right-color: transparent;
-  }
-
-  &:hover::after,
-  :hover::before {
-    width: 100%;
-    height: 100%;
+    color: ${orange};
   }
 `;
 function MiniNav() {
