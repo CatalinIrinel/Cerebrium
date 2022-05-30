@@ -24,7 +24,7 @@ export const HeroHeaderWrapper = styled.div`
   padding-top: 5rem;
 `;
 
-export const HeaderTitle = styled.h1`
+export const HeaderTitle = styled.h2`
   color: #f1f1f1;
   font-weight: bold;
   font-size: 2.5rem;

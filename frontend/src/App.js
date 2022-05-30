@@ -17,6 +17,9 @@ import 'remixicon/fonts/remixicon.css';
 import ResursePage from './pages/ResursePage';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import GDPR from './pages/GDPR';
+import TermeniConditii from './pages/TermeniConditii';
+import TermeniUtilizare from './pages/TermeniUtilizare';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,6 +35,9 @@ function App() {
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Routes>
+        <Route path="/termeni-utilizare" element={<TermeniUtilizare />} />
+        <Route path="/termeni-conditii" element={<TermeniConditii />} />
+        <Route path="/gdpr" element={<GDPR />} />
         <Route path="/afectiuni" element={<Afectiuni />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/serviciu/:id" element={<Serviciu />} />

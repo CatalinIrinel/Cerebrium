@@ -185,7 +185,7 @@ const ContactArea = styled.div`
     font-size: 4rem;
   }
 `;
-
+const contactArea = true;
 const pageTitle = [
   <p className="contactTitle">
     Pentru programarea unei ședințe ne poți contacta mai jos{' '}
@@ -238,7 +238,7 @@ function ContactPage() {
   };
   return (
     <>
-      <PageHeader pageTitle={pageTitle} />
+      <PageHeader pageTitle={pageTitle} contactArea={contactArea} />
       <ContactContainer>
         <span>* ședințele se pot desfășura atât online cât și la cabinet</span>
         <ContactWrapper>

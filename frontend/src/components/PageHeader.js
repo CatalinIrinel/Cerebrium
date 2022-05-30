@@ -30,9 +30,9 @@ export const HeaderWrapper = styled.div`
 export const HeaderTitle = styled.h1`
   color: #f1f1f1;
   font-weight: bold;
-  font-size: 60px;
+  font-size: 40px;
   position: absolute;
-  top: 20%;
+  top: ${({ contactArea }) => (contactArea ? '20%' : '25%')};
   @media screen and (max-width: 575.98px) {
     width: 300px;
     text-align: center;
@@ -42,11 +42,11 @@ export const HeaderTitle = styled.h1`
   }
 `;
 
-function PageHeader({ pageTitle }) {
+function PageHeader({ pageTitle, contactArea }) {
   return (
     <HeaderContainer>
       <HeaderWrapper>
-        <HeaderTitle>{pageTitle}</HeaderTitle>
+        <HeaderTitle contactArea={contactArea}>{pageTitle}</HeaderTitle>
       </HeaderWrapper>
     </HeaderContainer>
   );

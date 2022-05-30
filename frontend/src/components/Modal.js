@@ -58,6 +58,7 @@ const TextArea = styled.div`
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
+  overflow: auto;
   div {
     width: 100%;
     height: 60vh;

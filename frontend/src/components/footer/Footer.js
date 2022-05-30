@@ -42,9 +42,11 @@ function Footer() {
 
           <FooterLinkItems>
             <LinksTitle>Link-uri utile</LinksTitle>
-            <FooterLink to="/">Politică GDPR</FooterLink>
-            <FooterLink to="/">Termeni de Utilizare</FooterLink>
-            <FooterLink to="/">Termeni și Condiții</FooterLink>
+            <FooterLink to="/gdpr">Politică GDPR</FooterLink>
+            <FooterLink to="/termeni-utilizare">
+              Termeni de Utilizare
+            </FooterLink>
+            <FooterLink to="/termeni-conditii">Termeni și Condiții</FooterLink>
           </FooterLinkItems>
         </FooterLinksWrapper>
       </FooterLinksContainer>
