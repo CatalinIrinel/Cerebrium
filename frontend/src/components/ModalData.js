@@ -1020,7 +1020,7 @@ export const dataServicii = [
     price: [
       <p>
         Preț:
-        <br /> Copii: 100 RON / 50 de minute ședința <br /> Adulți: 150 RON / 50
+        <br /> Copii: 130 RON / 50 de minute ședința <br /> Adulți: 170 RON / 50
         de minute ședința
       </p>,
     ],
@@ -1087,7 +1087,7 @@ export const dataServicii = [
     price: [
       <p>
         Preț:
-        <br /> Copii: 100 RON / 50 de minute ședința <br /> Adulți: 150 RON / 50
+        <br /> Copii: 130 RON / 50 de minute ședința <br /> Adulți: 170 RON / 50
         de minute ședința
       </p>,
     ],
@@ -1323,7 +1323,7 @@ export const dataServicii = [
     price: [
       <p>
         Preț:
-        <br /> Copii: 100 RON / ședința <br /> Adulți: 150 RON / ședința
+        <br /> Copii: 130 RON / ședința <br /> Adulți: 170 RON / ședința
       </p>,
     ],
     online: false,
@@ -1945,7 +1945,7 @@ export const dataServicii = [
     price: [
       <p>
         Preț:
-        <br /> Copii: 100 RON / 50 de minute ședința <br /> Adulți: 150 RON / 50
+        <br /> Copii: 130 RON / 50 de minute ședința <br /> Adulți: 170 RON / 50
         de minute ședința
       </p>,
     ],
@@ -2060,7 +2060,7 @@ export const dataServicii = [
     price: [
       <p>
         Preț:
-        <br /> Copii: 100 RON / 50 de minute ședința <br /> Adulți: 150 RON / 50
+        <br /> Copii: 130 RON / 50 de minute ședința <br /> Adulți: 170 RON / 50
         de minute ședința
       </p>,
     ],

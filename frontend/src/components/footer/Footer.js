@@ -58,7 +58,7 @@ function Footer() {
           Cerebrium <FaRegCopyright className="copyrights" />{' '}
           {new Date().getFullYear()} All rights reserved.{' '}
           <p>
-            Created by <a href="https://peakngo.com"> PeakWeb</a>
+            Created by <a href="https://peakngo.com"> Peak & Go - Web</a>
           </p>
         </WebsiteRights>
         <SocialMedia>
