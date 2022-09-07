@@ -169,14 +169,33 @@ const ContactArea = styled.div`
     cursor: pointer;
   }
 
+  @media screen and (max-width: 600px) {
+    .contactTlf > p {
+      margin-top: 1rem;
+    }
+    .telefon {
+      border: 1px solid transparent;
+      border-radius: 1rem;
+      padding: 5px 10px;
+      background-color: #214222;
+      color: #fff;
+    }
+  }
+
   .contactData {
     & > * {
       margin-bottom: 0.8rem;
+    }
+    small {
+      display: none;
     }
     @media screen and (max-width: 600px) {
       & > div > .smallText {
         width: 200px;
         height: 50px;
+      }
+      small {
+        display: block;
       }
     }
   }
@@ -279,11 +298,12 @@ function ContactPage() {
                   </p>
                 </div>
 
-                <div>
+                <div className="contactTlf">
                   <h3>Telefon:</h3>
+                  <small>Apăsați pentru a suna</small>
                   <p>
                     <a className="telefon" href="tel:+40742323753">
-                      +40740 323 753
+                      +40742 323 753
                     </a>
                   </p>
                 </div>
@@ -362,8 +382,9 @@ function ContactPage() {
                   </p>
                 </div>
 
-                <div>
+                <div className="contactTlf">
                   <h3>Telefon:</h3>
+                  <small>Apăsați pentru a suna</small>
                   <p>
                     <a className="telefon" href="tel:+40752028775">
                       +40752 028 775
